@@ -14,7 +14,6 @@ export class MENTORS extends Component {
                             <h2>The fox and the lady</h2>
                             <h3>allen dalton</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio culpa dolores sapiente atque provident eaque ipsam minus. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam, odio! </p>
-                            <button class="ghost-btn">read more...</button>
 
                         </div>
 
@@ -28,7 +27,7 @@ export class MENTORS extends Component {
                         <div class="content">
                             <h2>Crying has been naughty</h2>
                             <h3>fabrice amant</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio culpa dolores sapiente atque provident eaque ipsam minus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, hic. </p><button class="ghost-btn">read more...</button></div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio culpa dolores sapiente atque provident eaque ipsam minus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, hic. </p></div>
 
                     </div>
 
@@ -40,7 +39,7 @@ export class MENTORS extends Component {
                         <div class="content">
                             <h2>Spider puzzle</h2>
                             <h3>carlos rodiguez armando</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio culpa dolores sapiente atque provident eaque ipsam minus. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p><button class="ghost-btn">read more...</button></div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio culpa dolores sapiente atque provident eaque ipsam minus. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p></div>
 
                     </div>
 

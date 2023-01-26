@@ -52,7 +52,7 @@ export default function Home() {
           </li>
         </ul>
         <div>
-          <Typography variant="h1" sx={{ color: "white", marginTop: 10, marginLeft: 60, fontWeight: 750 }}><span className="change-content"></span></Typography>
+          <Typography variant="h1" align="center" sx={{ color: "white", marginTop: 10, fontWeight: 750 }}><span className="change-content"></span></Typography>
         </div>
       </div>
 
@@ -60,7 +60,7 @@ export default function Home() {
         <div className="yellow-container"></div>
         <Typography variant="h2" sx={{ color: "white", marginTop: 5, marginLeft: 17, fontWeight: 650 }}>About<span>Us</span></Typography>
         <div className="services-content">
-          <Typography variant="body1" sx={{ color: "white", margin: 10 }}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</Typography>
+          <Typography variant="body1" sx={{ color: "white", margin: 10 ,marginBottom:25}}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</Typography>
         </div>
 
         <div className="yellow-container"></div>
@@ -151,19 +151,20 @@ export default function Home() {
 
 
       <div ref={Timer} className="timer">
+      <div className="white-container"></div>
         <Counter />
         <div className="white-container"></div>
       </div>
 
 
       <div ref={Project} className="project">
-        <Typography align="center" variant="h2" sx={{ color: "white", margin: 4, fontWeight: 650 }}>OUR  <span> PROJECTS </span></Typography>
+        <Typography align="center" variant="h2" sx={{ color: "white", margin: 8, fontWeight: 650 }}>OUR  <span> PROJECTS </span></Typography>
         <div class="gallery-wrap">
           <div class="item item-1"></div>
           <div class="item item-2"></div>
           <div class="item item-3"></div>
           <div class="item item-4"></div>
-          <div class="item item-5"></div>
+          
         </div>
 
       </div>

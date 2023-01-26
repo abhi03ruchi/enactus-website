@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
-import $ from 'jquery';
-
+import $ from 'jquery'
 function MyComponent() {
   useEffect(() => {
     $(document).ready(function() {
