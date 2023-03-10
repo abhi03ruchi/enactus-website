@@ -1,10 +1,20 @@
 import './App.css';
-import React from 'react';
+import React ,  { useState }  from 'react';
 import {Route , Routes} from 'react-router-dom';
 import Home from './Home';
 import Gallery from './Gallery';
-function App() {
+
+const App = () => {
+  const [loading, setLoading] = useState(true);
+  const spinner = document.getElementById("spinner");
+  if (spinner) {
+    setTimeout(() => {
+      spinner.style.display = "none";
+      setLoading(false);
+    }, 3000);
+  }
   return (
+    !loading && (
     <div className="App">
        <Routes>
       <Route path="/" element={<Home/>}/>
@@ -12,6 +22,7 @@ function App() {
 
           </Routes>
     </div>
+    )
   );
 }
 

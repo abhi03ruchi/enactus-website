@@ -13,7 +13,8 @@ export class MENTORS extends Component {
                         <div class="content">
                             <h2>The fox and the lady</h2>
                             <h3>allen dalton</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio culpa dolores sapiente atque provident eaque ipsam minus. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam, odio! </p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio culpa dolores sapiente atque provident eaque ipsam minus. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam, odio! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum accusantium saepe commodi ullam, eos nam laboriosam quibusdam, ipsam nemo sint aspernatur aliquam sit delectus inventore incidunt minus corporis voluptate dolores.
+                              </p>
 
                         </div>
 
