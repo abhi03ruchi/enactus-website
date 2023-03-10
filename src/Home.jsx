@@ -170,7 +170,7 @@ export default function Home() {
       </div>
 
       <div ref={Team} className="team">
-        <Typography align="center" variant="h2" sx={{ color: "white", margin: 4, fontWeight: 650 }}> <span> OUR  </span> MENTORS </Typography>
+        <Typography align="center" variant="h2" sx={{ color: "white", margin: 8, fontWeight: 650, marginTop:10 }}> <span> OUR  </span> MENTORS </Typography>
         < MENTORS />
       </div>
 
