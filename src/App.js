@@ -1,8 +1,10 @@
 import './App.css';
-import React ,  { useState }  from 'react';
-import {Route , Routes} from 'react-router-dom';
+import React, { useState } from 'react';
+import { Route, Routes } from 'react-router-dom';
 import Home from './Home';
 import Gallery from './Gallery';
+import GulKaari from './GulKaari/GulKaari';
+import PRAKRIKALA from './PRAKRIKALA/PRAKRIKALA';
 
 const App = () => {
   const [loading, setLoading] = useState(true);
@@ -13,15 +15,19 @@ const App = () => {
       setLoading(false);
     }, 3000);
   }
+
+  
   return (
     !loading && (
-    <div className="App">
-       <Routes>
-      <Route path="/" element={<Home/>}/>
-      <Route path="Gallery" element={<Gallery/>}/>
+      <div className="App">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="Gallery" element={<Gallery />} />
+          <Route path="GulKaari" element={<GulKaari/>} />
+          <Route path="PRAKRIKALA" element={<PRAKRIKALA/>} />
 
-          </Routes>
-    </div>
+        </Routes>
+      </div>
     )
   );
 }
