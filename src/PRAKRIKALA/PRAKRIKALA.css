@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+.pari-app {
+     background-color: black;
+}
+
+.pari-home {
+    height: 100vh;
+    background-color: #182527;
+    padding: 0;
+    margin: 0;
+}
+
+.nav {
+    /* background-color: #F2DEB9; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.pari-sections{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 50px;
+}
+
+.pari-sections .left{
+    flex: 0.3;
+    /* background-color: green; */
+}
+.pari-sections .right{
+    flex: 0.7;
+    /* background-color: red; */
+}
+.pari-sections .right button {
+    font-family: 'Rubik', sans-serif;
+    text-transform: uppercase;
+    margin-left: 20%;
+    outline: 0;
+    border-radius: 100px;
+    color: white;
+    width: 250px;
+    border: 0;
+    padding: 15px;
+    background: #20CD8D;
+    font-size: 24px;
+    font-weight: 400;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3 ease;
+    cursor: pointer;
+}
+.img1 img {
+    margin-top: 1px;
+    height: 75px;
+    padding: 20px;
+     max-width: 100%;
+    /* background-color:wheat; */
+}
+
+.img2 {
+    width: 60px;
+    height: 30px;
+    padding: 20px;
+    max-width: 100%;
+    /* background-color:wheat; */
+}
+.img3 {
+    /* width: 260px; */
+    /* height: 500px; */
+    margin-top: 20px;
+    max-width: 100%;
+}
+.img4{
+    height: 75px;
+    margin-left: 28%;
+    margin-top: 1%;
+}
+
+
+.pari-overview {
+    height: 100vh;
+    background-color:#CCF4E5;
+    padding: 0;
+    margin: 0;
+}
+
+.pari-overview  .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+   
+}
+.pari-overview   .overview-content{
+  
+    margin-bottom: 0.1%;
+} 
+.pari-overview .left button {
+    font-family: 'Rubik', sans-serif;
+    text-transform: uppercase;
+    /* margin-left: 20%; */
+    outline: 0;
+    border-radius: 100px;
+    color: white;
+    width: 250px;
+    border: 0;
+    padding: 15px;
+    background: #20CD8D;
+    font-size: 24px;
+    font-weight: 400;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3 ease;
+    cursor: pointer;
+}
+
+.pari-goals{
+        height: 100vh;
+        background-color: #182527;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+}
+.pari-goals img {
+    height: 500px;
+
+}
+
+.site-footer {
+  background-color:black ;
+  padding: 0;
+  margin: 0;
+  /* height: 100vh; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.site-footer .north {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 30px;
+    /* background-color: #20CD8D; */
+}
+.site-footer .north .one{
+  /* display: inline; */
+  margin: 10px;
+  font-size: 20px;
+}
+
+.site-footer .north .one ion-icon{
+  color: #FFE321;
+}
+.site-footer .north .text{
+  display: inline;
+  padding: 10px;
+  font-family: 'Rubik', sans-serif;
+  font-size: 20px;
+}
+.social-icons
+{
+  padding-left:0;
+  margin-bottom:0;
+  list-style:none;
+}
+.social-icons li
+{
+  display:inline-block;
+  margin-bottom:4px
+  
+}
+.social-icons li.title
+{
+  margin-right:15px;
+  text-transform:uppercase;
+  color:#96a2b2;
+  font-weight:700;
+  font-size:13px
+}
+.social-icons a{
+  background-color:#eceeef;
+  background-color:#FFC122;
+  color:black;
+  font-size:16px;
+  display:inline-block;
+  line-height:44px;
+  width:44px;
+  height:44px;
+  text-align:center;
+  margin-right:8px;
+  border-radius:100%;
+  -webkit-transition:all .2s linear;
+  -o-transition:all .2s linear;
+  transition:all .2s linear
+}
+.social-icons a:active,.social-icons a:focus,.social-icons a:hover
+{
+  color:#fff;
+  background-color:#29aafe
+}
+.social-icons.size-sm a
+{
+  line-height:34px;
+  height:34px;
+  width:34px;
+  font-size:14px
+}
+.social-icons a.facebook:hover
+{
+  background-color:#3b5998
+}
+.social-icons a.twitter:hover
+{
+  background-color:#00aced
+}
+.social-icons a.linkedin:hover
+{
+  background-color:#007bb6
+}
+.social-icons a.instagram:hover
+{
+  background-color:#ea4c89
+}
+@media (max-width:767px)
+{
+  .social-icons li.title
+  {
+    display:block;
+    margin-right:0;
+    font-weight:600
+  }
+}
+.site-footer .follow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  /* background-color: rebeccapurple; */
+  margin-right: 30px ;
+  margin-top: -30px;
+}
+.site-footer .ftext {
+  margin-right: 30px ;
+  font-size: 20px;
+  font-family: 'Rubik', sans-serif;
+}
+.site-footer .south{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.south img {
+    margin-top: 100px;
+    /* background-color: #ea4c89; */
+    height: 75px;
+    bottom: 0;
+    right: 0;
+    /* padding: 20px;
+    max-width: 100%; */
+}
+.south .enactusLogo {
+  bottom: 0;
+  right: 0;
+  /* background-color: #ea4c89; */
+  padding: 2px;
+  margin-left: 60%;
+}

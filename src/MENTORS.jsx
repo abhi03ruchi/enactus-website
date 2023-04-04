@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-
+import AM from './homeAssets/Adhya Mittal_president.jpg'
+import PE from './homeAssets/President_Eeshika.jpg'
 export class MENTORS extends Component {
     render() {
         return (
@@ -7,12 +8,12 @@ export class MENTORS extends Component {
                 <div class="contain">
                     <div class="box">
 
-                        <div class="img-box" title="The fox and the lady" data-author="allen dalton"
-                        ><img src="https://source.unsplash.com/featured/?lady, fox" alt="" /></div>
+                        <div class="img-box" title="President Enactus" data-author="Eeshika Madaan"
+                        ><img src = {PE} alt="" /></div>
 
                         <div class="content">
-                            <h2>The fox and the lady</h2>
-                            <h3>allen dalton</h3>
+                            <h2>President Enactus</h2>
+                            <h3>Eeshika Madaan</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio culpa dolores sapiente atque provident eaque ipsam minus. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam, odio! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum accusantium saepe commodi ullam, eos nam laboriosam quibusdam, ipsam nemo sint aspernatur aliquam sit delectus inventore incidunt minus corporis voluptate dolores.
                               </p>
 
@@ -22,12 +23,12 @@ export class MENTORS extends Component {
 
                     <div class="box">
 
-                        <div class="img-box" title="Crying has been naughty" data-author="fabrice amant"
-                        ><img src="https://source.unsplash.com/featured/?dream, emotion, face" alt="" /></div>
+                        <div class="img-box" title="President Enactus" data-author="Adhya Mittal"
+                        ><img src= {AM} alt="" /></div>
 
                         <div class="content">
-                            <h2>Crying has been naughty</h2>
-                            <h3>fabrice amant</h3>
+                            <h2>President Enactus</h2>
+                            <h3>Adhya Mittal</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio culpa dolores sapiente atque provident eaque ipsam minus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, hic. </p></div>
 
                     </div>
