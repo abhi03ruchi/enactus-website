@@ -56,13 +56,15 @@
     /* background-color:wheat; */
 }
 
-.img2 {
+.img2 img {
     width: 60px;
     height: 30px;
     padding: 20px;
     max-width: 100%;
-    /* background-color:wheat; */
-}
+     /* background-color:wheat;  */
+} 
+
+
 .img3 {
     /* width: 260px; */
     /* height: 500px; */

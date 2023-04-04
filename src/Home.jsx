@@ -8,8 +8,7 @@ import Counter from './Counter';
 import MENTORS from './MENTORS';
 import logo from './homeAssets/Enactus.png'
 import teamPic from './homeAssets/teamPic.jpg'
-
-
+import MISSION from './MISSION'
 // import { Grid } from "@mui/material";
 
 
@@ -17,8 +16,8 @@ import teamPic from './homeAssets/teamPic.jpg'
 export default function Home() {
   const AboutUs = useRef(null);
   const Mission = useRef(null);
+  const Mission2 = useRef(null);
   const Project = useRef(null);
-  const Project2 = useRef(null);
   const Timer = useRef(null);
   const Team = useRef(null);
   const Footer = useRef(null);
@@ -153,6 +152,10 @@ export default function Home() {
 
       </div>
 
+{/* 
+      <div ref={Mission2} className="mission2">
+        <MISSION/>
+      </div> */}
 
 
       <div ref={Timer} className="timer">

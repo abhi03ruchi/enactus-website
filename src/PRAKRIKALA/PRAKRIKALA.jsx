@@ -10,21 +10,20 @@ import imag5 from './sustain.png';
 import logo from './Enactus copy.png'
 
 
+
 export default function PRAKRIKALA() {
     const Overview = useRef(null);
     const goals = useRef(null);
-    const Gallery = useRef(null);
-    const How = useRef(null);
-    const Impact = useRef(null);
     const Footer = useRef(null);
 
     return (
         <div className="pari-app">
             <div className="pari-home">
                 <div className="nav">
-                    <div className="img1" > <img src={imag1} alt="hello" /></div>
-                    <img className="img2" src={imag2} alt="hello" />
+                    <div className="img1" > <img src={imag1} alt="LOGO" /></div>
+                    <img className="Menu" src={imag2} alt="MENU" />
                 </div>
+                {/* <MENU/> */}
                 <div className="pari-sections">
                     <div className="left">
                         <img src={imag3} alt="prakLOGO" className="img3" />
