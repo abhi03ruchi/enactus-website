@@ -1,4 +1,5 @@
 import React, { useRef } from "react";
+import { useState } from "react";
 import './GulKaari.css';
 import { Typography } from "@mui/material";
 import imag1 from './assets/Enactus.png';
@@ -12,9 +13,17 @@ import imag8 from './assets/sustain.png';
 // import GulGallery from './GulGallery';
 import CircleImpact from './CircleImpact.jsx';
 import logo from './assets/Enactus.png'
+import MENU from "./menu.jsx"
 
 
 export default function GulKaari() {
+
+    const [value , setValue] = useState(false);
+    const handleClick = () => {
+        setValue(!value);
+      };
+
+
     const Overview = useRef(null);
     const What = useRef(null);
     const Gallery = useRef(null);
@@ -29,8 +38,8 @@ export default function GulKaari() {
             <div className="gul-home">
                 <div className="nav">
                     <div className="img1" ><img src={imag1} alt="logo" /></div>
-                    <img className="img2" src={imag2} alt="icon" />
-                    {/* <MENU/> */}
+                    {/* <img className="img2" src={imag2} alt="icon" /> */}
+                    <MENU value={value} handleClick={handleClick}/>
                 </div>
                 <div className="gul-sections">
                     <div className="left">

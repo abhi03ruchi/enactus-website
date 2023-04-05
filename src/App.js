@@ -5,6 +5,7 @@ import Home from './Home';
 import Gallery from './Gallery';
 import GulKaari from './GulKaari/GulKaari';
 import PRAKRIKALA from './PRAKRIKALA/PRAKRIKALA';
+import DHARINI from './DHARINI/Dharini';
 
 const App = () => {
   const [loading, setLoading] = useState(true);
@@ -25,7 +26,7 @@ const App = () => {
           <Route path="Gallery" element={<Gallery />} />
           <Route path="GulKaari" element={<GulKaari/>} />
           <Route path="PRAKRIKALA" element={<PRAKRIKALA/>} />
-
+          <Route path="DHARINI" element={<DHARINI/>} />
         </Routes>
       </div>
     )
