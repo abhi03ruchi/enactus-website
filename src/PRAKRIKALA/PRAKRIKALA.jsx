@@ -1,14 +1,11 @@
 import React, { useRef } from "react";
 import './PRAKRIKALA.css';
 import { Typography } from "@mui/material";
-// import imag1 from './EnactusIGDTUWlogo.png';
-import imag1 from './enactus.jpg';
-import imag2 from './3lines.png';
-import imag3 from './praLOGO.png';
-import imag4 from './arrow.png';
-import imag5 from './sustain.png';
-import logo from './Enactus copy.png'
-
+import imag2 from './assets/3lines.png';
+import imag3 from './assets/praLOGO.png';
+import imag4 from './assets/arrow.png';
+import imag5 from './assets/sustain.png';
+import logo from './assets/Enactus copy.png'
 
 
 export default function PRAKRIKALA() {
@@ -20,8 +17,8 @@ export default function PRAKRIKALA() {
         <div className="pari-app">
             <div className="pari-home">
                 <div className="nav">
-                    <div className="img1" > <img src={imag1} alt="LOGO" /></div>
-                    <img className="Menu" src={imag2} alt="MENU" />
+                    <div className="img1" > <img src={logo} alt="LOGO" /></div>
+                    <img className="img2" src={imag2} alt="MENU" />
                 </div>
                 {/* <MENU/> */}
                 <div className="pari-sections">
@@ -103,14 +100,3 @@ export default function PRAKRIKALA() {
 
 
 
-// <div className="list">
-//                         <div className="ion"> <ion-icon name="location-sharp"></ion-icon>
-//                            Indira Gandhi Delhi Technical University for women,Opp to James church, delhi-110006
-//                         </div>
-//                         <div className="ion"><ion-icon name="call-sharp"></ion-icon>
-//                             Kangana Roshan: 9546357899
-//                             M Deekshitha Reddy: 8076468201</div>
-//                         <div className="ion"> <ion-icon name="mail-sharp"></ion-icon>
-//                             projectgulkaari@gmail.com
-//                             enactus.igdtuw@gmail.com</div>
-//                     </div>
