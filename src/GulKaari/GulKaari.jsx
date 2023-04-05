@@ -9,7 +9,7 @@ import imag5 from './assets/photo2.png';
 import imag6 from './assets/Wphoto1.png';
 import imag7 from './assets/Wphoto2.png';
 import imag8 from './assets/sustain.png';
-import GulGallery from './GulGallery';
+// import GulGallery from './GulGallery';
 import CircleImpact from './CircleImpact.jsx';
 import logo from './assets/Enactus.png'
 
@@ -18,6 +18,7 @@ export default function GulKaari() {
     const Overview = useRef(null);
     const What = useRef(null);
     const Gallery = useRef(null);
+    const Gallery2 = useRef(null);
     const How = useRef(null);
     const Impact = useRef(null);
     const goals = useRef(null);
@@ -27,8 +28,9 @@ export default function GulKaari() {
         <div className="gul-app">
             <div className="gul-home">
                 <div className="nav">
-                    <div className="img1" ><img src={imag1} alt="hello" /></div>
-                    <img className="img2" src={imag2} alt="hello" />
+                    <div className="img1" ><img src={imag1} alt="logo" /></div>
+                    <img className="img2" src={imag2} alt="icon" />
+                    {/* <MENU/> */}
                 </div>
                 <div className="gul-sections">
                     <div className="left">
@@ -84,14 +86,44 @@ export default function GulKaari() {
                 </div>
             </div>
 
-            <div ref={Gallery} className="gul-gallery">
-                <Typography variant="h2" align="center" sx={{ color: "#222344", marginTop: -2, marginLeft: 17, fontWeight: 650 }}>Ballery</Typography>
-                
+            {/* <div ref={Gallery} className="gul-gallery">
+                <Typography variant="h2" align="center" sx={{ color: "#222344", marginTop: -2, marginLeft: 17, fontWeight: 650 }}>Gallery</Typography>
                 <GulGallery />
+            </div> */}
+
+            <div ref={Gallery2} className="gul-gallery">
+                <Typography variant="h2" align="center" sx={{ color: "#222344", marginTop: -10,marginBottom: 5, marginLeft: 0, fontWeight: 650 }}>Gallery</Typography>
+
+                <div class="container">
+                    <div class="carousel">
+                        <div id="pic1" class="item">
+                        </div>
+                        <div id="pic2" class="item">
+                        </div>
+                        <div id="pic3" class="item"></div>
+                        <div id="pic4" class="item">
+                        </div>
+                        <div id="pic5" class="item">
+                        </div>
+                        <div id="pic6" class="item">
+                        </div>
+                        <div id="pic7" class="item">
+                        </div>
+                        <div id="pic8" class="item">
+                        </div>
+                        <div id="pic9" class="item">
+                        </div>
+                        <div id="pic10" class="item">
+                        </div>
+                        <div id="pic11" class="item">
+                        </div>
+                    </div>
+                </div>
             </div>
 
+
             <div ref={How} className="gul-how">
-                <Typography variant="h2" align="center" sx={{ color: "#222344", marginTop: 0, fontWeight: 650 }}>How we do it?</Typography>
+                <Typography variant="h2" align="center" sx={{ color: "#222344", paddingTop: 5, fontWeight: 650 }}>How we do it?</Typography>
                 <div className="guls">
                     <div className="phase1">Phase 01</div>
                     <div className="part">
@@ -156,7 +188,7 @@ export default function GulKaari() {
             </div>
 
             <div ref={How} className="gul-how">
-                <Typography variant="h2" align="center" sx={{ color: "#222344", marginTop:0, fontWeight: 650 }}>How we do it?</Typography>
+                <Typography variant="h2" align="center" sx={{ color: "#222344", marginTop: 0, fontWeight: 650 }}></Typography>
                 <div className="guls">
                     <div className="phase1">Phase 02</div>
                     <div className="part">
@@ -222,7 +254,7 @@ export default function GulKaari() {
             </div>
 
             <div ref={Impact} className="gul-impact">
-                <Typography variant="h2" align="center" sx={{ color: "#222344", marginTop: 5, padding: 8, marginLeft: 17, fontWeight: 650 }}>Impact Generated</Typography>
+                <Typography variant="h2" align="center" sx={{ color: "#222344", marginTop: 0, padding: 8, marginLeft: 17, fontWeight: 650 }}>Impact Generated</Typography>
 
                 <CircleImpact />
 
@@ -236,19 +268,19 @@ export default function GulKaari() {
 
 
 
-            <Typography bgcolor={'black'} variant="h2" align="left" fontFamily={'Rubik'} fontSize={25} sx={{ paddingLeft:2, paddingTop:2 ,margin:1.5 , color: "whitesmoke", fontWeight: 650 }}> Contact Us </Typography>
+            <Typography bgcolor={'black'} variant="h2" align="left" fontFamily={'Rubik'} fontSize={25} sx={{ paddingLeft: 2, paddingTop: 2, margin: 1.5, color: "whitesmoke", fontWeight: 650 }}> Contact Us </Typography>
             <div ref={Footer} className="site-footer">
                 <div className="north">
                     <div className="one"> <ion-icon className="ions" name="location-sharp"></ion-icon>
                         <div className="text">Indira Gandhi Delhi Technical University for women,  <br />
-                        Opp to James church, delhi-110006</div>
+                            Opp to James church, delhi-110006</div>
                     </div>
                     <div className="one"><ion-icon name="call-sharp"></ion-icon>
-                        <div className="text">  Kangana Roshan: 9546357899 <br/>
-                             M Deekshitha Reddy: 8076468201</div>
+                        <div className="text">  Kangana Roshan: 9546357899 <br />
+                            M Deekshitha Reddy: 8076468201</div>
                     </div>
                     <div className="one"> <ion-icon name="mail-sharp"></ion-icon>
-                        <div className="text">  projectgulkaari@gmail.com<br/>
+                        <div className="text">  projectgulkaari@gmail.com<br />
                             enactus.igdtuw@gmail.com</div>
                     </div>
                 </div>
