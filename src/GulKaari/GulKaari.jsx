@@ -44,8 +44,8 @@ export default function GulKaari() {
             <div className="gul-home">
                 <div className="nav">
                     <div className="img1" ><img src={imag1} alt="logo" /></div>
-                    {/* <img className="img2" src={imag2} alt="icon" /> */}
-                    <MENU value={value} handleClick={handleClick}/>
+                    {/* <img className="img2" src={imag2} alt="icon" /> 
+                    <MENU value={value} handleClick={handleClick}/>*/}
                 </div>
                 <div className="gul-sections">
                     <div className="left">

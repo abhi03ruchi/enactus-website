@@ -29,11 +29,20 @@ export default function Aveksha(){
                 <div className="nav">
                     <div className="img1" ><img src={imag1} alt="hello" /></div>
                 </div>
-            <Typography variant="h1" fontFamily={'Libre Baskerville'} align="left" sx={{ color: "#F2DEB9", marginTop: 10, fontWeight: 750 }}>PROJECT AVEKSHA</Typography>
-            <Typography variant="body1" fontFamily={'Rubik'} fontSize={25} sx={{ color: "#FFFFFF", margin: 5, marginBottom: 10 }}>
-            An initiative to promote the well-being of stray animals via sustainable and environment friendly approaches.
-            </Typography>
-            <Button align="center"  variant="contained" sx={{ backgroundColor:"#CDAD7D" , color:"#222344" }} onClick={() => scrollToSection(AboutUs)}>Learn More</Button>
+                <div className="gul-sections">
+                    <div className="left">
+                        <img src={AvekshaLogo} alt="" />
+                    </div>
+                    <div className="right">
+                        <Typography variant="h1" fontFamily={'Libre Baskerville'} align="left" sx={{ color: "#F2DEB9", marginTop: 10, fontWeight: 750 }}>PROJECT AVEKSHA</Typography>
+                        <Typography align="left" fontSize={24} variant="body1" sx={{ color: "white", marginTop: 5, marginBottom: 5 }}>
+                        An initiative to promote the well-being of stray animals via sustainable and environment friendly approaches.
+
+                        </Typography>
+                        <Button align="center"  variant="contained" sx={{ backgroundColor:"#CDAD7D" , color:"#222344" }} onClick={() => scrollToSection(AboutUs)}>Learn More</Button>
+
+                    </div>
+                </div>
         </div>
 
 

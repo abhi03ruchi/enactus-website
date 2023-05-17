@@ -37,7 +37,7 @@ export default function Adva(){
                         Adding Value to water, providing clean drinking water accessible to all
 
                         </Typography>
-                        <Button align="center" color="secondary" sx={{ backgroundColor:"#3F9DAA" , color:"#222344" }}  onClick={() => scrollToSection(AboutUs)}>Learn More X</Button>
+                        <Button align="center" color="secondary" sx={{ backgroundColor:"#3F9DAA" , color:"#222344" }}  onClick={() => scrollToSection(AboutUs)}>Learn More </Button>
 
                     </div>
                 </div>
@@ -67,7 +67,7 @@ export default function Adva(){
             <div class="wrapper">	
             <div class="arrow-steps clearfix">
           <div class="step current one-adva"> <span> Step 1</span> </div>
-          <div class="step two"> <span>Step 2 some words</span> </div>
+          <div class="step two"> <span>Step 2 </span> </div>
           <div class="step three"> <span> Step 3</span> </div>
           <div class="step four"> <span>Step 4</span> </div>
 			  </div>
@@ -139,7 +139,7 @@ export default function Adva(){
                 <img src={AdvaFilter}/>
             </div>
             <div className="left">
-                <h5>Features</h5>
+                <h4>Features</h4>
                 <li>Keeps water cool for long </li>
                 <li>Filter bag is permeable to residues lower than 5 micron</li>
                 <li>can filter upto 8-10 litres of water</li>

@@ -43,8 +43,9 @@ export default function Dharini() {
             <div className="dha-home">
                 <div className="nav">
                     <div className="img1" ><img src={logo} alt="logo" /></div>
-                    {/* <img className="img2" src={lines} alt="icon" /> */}
-                    <MENU value={value} handleClick={handleClick}/>
+                    {/* <img className="img2" src={lines} alt="icon" /> 
+                                        <MENU value={value} handleClick={handleClick}/>
+*/}
                     {/* <HamburgerDropdown/> */}
                 </div>
                 <div className="dha-sections">
