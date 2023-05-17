@@ -37,26 +37,26 @@ function MyComponent() {
 
 						<div class="col-lg-3 stats">
 							<i class="fa fa-code" aria-hidden="true"></i>
-							<div class="counting" data-count="900000">0</div>
-							<h5>Lines</h5>
+							<div class="counting" data-count="25">0</div>
+							<h5>PROJECT KHIDMAT</h5>
 						</div>
 
 						<div class="col-lg-3 stats">
 							<i class="fa fa-check" aria-hidden="true"></i>
-							<div class="counting" data-count="280">0</div>
-							<h5>Projects </h5>
+							<div class="counting" data-count="250">0</div>
+							<h5>PROJECT ADVA </h5>
 						</div>
 
 						<div class="col-lg-3 stats">
 							<i class="fa fa-user" aria-hidden="true"></i>
-							<div class="counting" data-count="75">0</div>
-							<h5>Happy </h5>
+							<div class="counting" data-count="186">0</div>
+							<h5>PROJECT GULKAARI </h5>
 						</div>
 
 						<div class="col-lg-3 stats">
 							<i class="fa fa-coffee" aria-hidden="true"></i>
-							<div class="counting" data-count="999">0</div>
-							<h5>coffee</h5>
+							<div class="counting" data-count="6100">0</div>
+							<h5>PROJECT DHARINI</h5>
 						</div>
 
 					</div>
