@@ -33,6 +33,12 @@ export default function GulKaari() {
     const goals = useRef(null);
     const Footer = useRef(null);
 
+    const scrollToSection = (elementRef) => {
+        window.scrollTo({
+          top: elementRef.current.offsetTop,
+          behavior: "smooth",
+        });
+    };
     return (
         <div className="gul-app">
             <div className="gul-home">
@@ -52,12 +58,12 @@ export default function GulKaari() {
 
                             An initiative to achieve social, economic, and cultural changes in society by providing better sales to the product and the dying arts of communities.
                         </Typography>
-                        <button>LEARN MORE</button>
+                        <button onClick={()=>scrollToSection(Overview)}>LEARN MORE</button>
                     </div>
                 </div>
             </div>
 
-            <div ref={Overview} className="overview">
+            <div ref={Overview} className="overview gulkaari">
                 <div className="left">
                     <div className="overview-content">
                         <Typography variant="h2" sx={{ color: "#222344", marginTop: 5, marginLeft: 17, fontWeight: 650 }}>An Overview</Typography>

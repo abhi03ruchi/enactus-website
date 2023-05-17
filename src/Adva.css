@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+}
+.adva{
+    background-color: #C1E6E6;
+}
+.adva-main{
+    background-image: url("./Images/AdvaMain.png"); /* The image used */
+    height: 650px;
+    width: 100%;
+}
+.clearfix:after {
+    clear: both;
+    content: "";
+    display: block;
+    height: 0;
+}
+
+.container {
+	font-family: 'Lato', sans-serif;
+	margin: 0 auto;
+}
+
+.wrapper {
+	display: table-cell;
+	height: 10px;
+	vertical-align: middle;
+}
+
+.nav {
+	margin-top: 40px;
+}
+
+
+
+
+
+
+.arrow-steps .step {
+	font-size: 24px;
+	text-align: center;
+	color:white;
+	cursor: default;
+	margin: 0 3px;
+	padding: 10px 10px 10px 30px;
+	min-width: 230px;
+    height: 140px;
+	float: left;
+	position: relative;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none; 
+  transition:  0.2s ease;
+}
+.one-adva{
+    background-color: #9ED0D0;
+}
+.two{
+	background-color: #53A8B4;
+}
+.three{
+	background-color: #318BA2;
+}
+.four{
+    background-color: #184E5B;
+}
+
+.arrow-steps .step:after,
+.arrow-steps .step:before {
+	content: " ";
+	position: absolute;
+	top: 0;
+	right: -17px;
+	width: 0;
+	height: 0;
+	border-top: 19px solid transparent;
+	border-bottom: 17px solid transparent;
+	border-left: 17px solid ;	
+	z-index: 2;
+  transition: border-color 0.2s ease;
+}
+
+.arrow-steps .step:before {
+	right: auto;
+	left: 0;
+	border-left: 17px solid #fff;	
+	z-index: 0;
+}
+
+.arrow-steps .step:first-child:before {
+	border: none;
+}
+
+.arrow-steps .step:first-child {
+	border-top-left-radius: 4px;
+	border-bottom-left-radius: 4px;
+}
+
+.arrow-steps .step span {
+	position: relative;
+}
+.adva-line{
+	background-color: #3F9DAA;
+	height: 80px;
+	margin:20px 0 20px 0  ;
+	align-items: center;
+}
+.adva-line h1{
+	align: center;
+	color:#032757;
+	font-size: 50px;
+	font-weight: 550;
+}
+.adva-stories{
+	display:flex ;
+	flex-direction: row;
+	padding:15px;
+
+}
+.adva-stories .left{
+	width: 800px;
+	padding: 50px 30px 30px 100px;
+}
+.adva-stories .left h6{
+font-size: 35px;
+color: #236778;
+}
+.adva-stories .right{
+	margin-left: 60px;
+}
+.adva-stories .left li{
+	font-size: 35px;
+color: #236778;
+}

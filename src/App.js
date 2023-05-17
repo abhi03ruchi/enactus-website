@@ -6,6 +6,8 @@ import Gallery from './Gallery';
 import GulKaari from './GulKaari/GulKaari';
 import PRAKRIKALA from './PRAKRIKALA/PRAKRIKALA';
 import DHARINI from './DHARINI/Dharini';
+import Adva from "./Adva"
+import Aveksha from "./Aveksha"
 
 const App = () => {
   const [loading, setLoading] = useState(true);
@@ -27,6 +29,9 @@ const App = () => {
           <Route path="GulKaari" element={<GulKaari/>} />
           <Route path="PRAKRIKALA" element={<PRAKRIKALA/>} />
           <Route path="DHARINI" element={<DHARINI/>} />
+          <Route path="Adva" element={<Adva/>}/>
+          <Route path="Aveksha" element={<Aveksha/>}/>
+
         </Routes>
       </div>
     )

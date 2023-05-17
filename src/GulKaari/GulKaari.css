@@ -91,13 +91,15 @@
 
 .overview {
     height: 100vh;
-    background-color: #F2DEB9;
     padding: 0;
     margin: 0;
     display: flex;
     flex-direction: row;
 }
+.gulkaari{
+    background-color: #F2DEB9;
 
+}
 .overview .left {
     flex: 0.5;
     display: flex;

@@ -169,7 +169,7 @@ export default function Home() {
         <Typography align="center" variant="h2" sx={{ color: "white", margin: 8, fontWeight: 650 }}>OUR  <span> PROJECTS </span></Typography>
         <div class="gallery-wrap">
           <div class="item item-1">
-            <a className="buttin" href="#"> Learn More</a>
+            <a className="buttin" href=""> Learn More</a>
           </div>
           <div class="item item-2">
           <a className="buttin" href="#"> Learn More</a>

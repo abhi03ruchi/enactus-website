@@ -13,6 +13,13 @@ export default function PRAKRIKALA() {
     const goals = useRef(null);
     const Footer = useRef(null);
 
+    const scrollToSection = (elementRef) => {
+        window.scrollTo({
+          top: elementRef.current.offsetTop,
+          behavior: "smooth",
+        });
+    };
+
     return (
         <div className="pari-app">
             <div className="pari-home">
@@ -30,7 +37,7 @@ export default function PRAKRIKALA() {
                         <Typography variant="body1" fontFamily={'Rubik'} fontSize={25} sx={{ color: "#FFFFFF", margin: 5, marginBottom: 10 }}>
                             Prakri-Kala is an eco-centric enterprise that upcycles locally sourced waste to create innovative products and promote the socio-economic welfare of underrepresented communities.
                         </Typography>
-                        <button>LEARN MORE</button>
+                        <button onClick={() => scrollToSection(Overview)}>LEARN MORE</button>
                         <div><img className="img4" src={imag4} alt="button" /> </div>
                     </div>
                 </div>
