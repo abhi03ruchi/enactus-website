@@ -8,6 +8,9 @@ import imag5 from './assets/sustain.png';
 import logo from './assets/Enactus copy.png'
 
 
+import NAVBAR from "../NAVBAR";
+
+
 export default function PRAKRIKALA() {
     const Overview = useRef(null);
     const goals = useRef(null);
@@ -23,10 +26,11 @@ export default function PRAKRIKALA() {
     return (
         <div className="pari-app">
             <div className="pari-home">
-                <div className="nav">
+                {/* <div className="nav">
                     <div className="img1" > <img src={logo} alt="LOGO" /></div>
                     <img className="img2" src={imag2} alt="MENU" />
-                </div>
+                </div> */}
+                <NAVBAR/>
                 {/* <MENU/> */}
                 <div className="pari-sections">
                     <div className="left">
@@ -61,39 +65,52 @@ export default function PRAKRIKALA() {
                 <img src={imag5} alt="sustain" />
             </div>
 
-            <Typography bgcolor={'black'} variant="h2" align="left" fontFamily={'Rubik'} fontSize={25} sx={{ paddingLeft:2, paddingTop:2 ,margin:1.5 , color: "whitesmoke", fontWeight: 650 }}> Contact Us </Typography>
-            <div ref={Footer} className="site-footer">
+            <div className="site-footer">
                 <div className="north">
+                    <Typography bgcolor={'black'} variant="h2" align="left" fontFamily={'Rubik'} fontSize={25} sx={{ paddingLeft: 0, paddingTop: 2, margin: 1.5, color: "whitesmoke", fontWeight: 650 }}> Contact Us </Typography>
                     <div className="one"> <ion-icon className="ions" name="location-sharp"></ion-icon>
                         <div className="text">Indira Gandhi Delhi Technical University for women,  <br />
-                        Opp to James church, delhi-110006</div>
+                            Opp to James church, delhi-110006</div>
                     </div>
                     <div className="one"><ion-icon name="call-sharp"></ion-icon>
-                        <div className="text">  Kangana Roshan: 9546357899 <br/>
-                             M Deekshitha Reddy: 8076468201</div>
-                    </div>
-                    <div className="one"> <ion-icon name="mail-sharp"></ion-icon>
-                        <div className="text">  projectgulkaari@gmail.com<br/>
-                            enactus.igdtuw@gmail.com</div>
-                    </div>
-                </div>
-                <div className="south">
-                    <div className="follow">
-                        <div className="ftext">Follow Us on: </div>
-                        <div class="col-md-4 col-sm-6 col-xs-12">
-                            <ul class="social-icons">
-                                <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li><a class="instagram" href="#"><i class="fa fa-instagram"></i></a></li>
-                                <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
-                            </ul>
+                        <div className="text">  Eeshika Madaan: +91 85955 81045 <br />
+                            Adhya Mittal: +91 77039 20800
                         </div>
                     </div>
+                    <div className="one"> <ion-icon name="mail-sharp"></ion-icon>
+                        <div className="text">
+                            enactus.igdtuw@gmail.com</div>
+                    </div>
+
+                </div>
+                <div className="south">
                     <div className="enactusLogo">
                         <img src={logo} alt="" />
                     </div>
-                    <hr />
+                    <div className="meaning-text">
+                        <p>
+                            <span>En</span>trepreneurial - igniting business innovation with integrity and passion.<br />
+                            <span>Act</span>ion - the experience of social impact that sparks social enterprise.
+                            <br />
+                            <span>Us</span> - student, academic and business leaders collaborating to create a better world.
+                        </p>
+                    </div>
+
+                    <div className="follow">
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                            <ul class="social-icons">
+                                <li><a class="twitter" href="#"><i class="fa fa-tree"></i></a></li>
+                                <li><a class="instagram" href="https://instagram.com/enactus.igdtuw?igshid=MzRlODBiNWFlZA=="><i class="fa fa-instagram"></i></a></li>
+                                <li><a class="linkedin" href="https://www.linkedin.com/company/enactusigdtuw/"><i class="fa fa-linkedin"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
+            </div>
+
+            <div className="footer">
+                <div className="white-container"></div>
+                <Typography variant="body1" align="center" sx={{ color: "white", margin: 2, fontWeight: 650, fontSize: 20 }}>Enactus IGDTUW Copyright @ 2023 </Typography>
             </div>
 
 
