@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
 
-.gul-app {
+/* .gul-app {
     background-color: black;
-}
+} */
 
 .gul-home {
     height: 95vh;
@@ -538,3 +538,5 @@
     background-image: url('./assets/images/gul11.jpg');
   }
 
+
+  /* footer */

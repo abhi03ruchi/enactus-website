@@ -8,6 +8,7 @@ import PRAKRIKALA from './PRAKRIKALA/PRAKRIKALA';
 import DHARINI from './DHARINI/Dharini';
 import Adva from "./Adva"
 import Aveksha from "./Aveksha"
+import ScrollToTop from "./ScrollToTop";
 
 const App = () => {
   const [loading, setLoading] = useState(true);
@@ -19,19 +20,19 @@ const App = () => {
     }, 3000);
   }
 
-  
+
   return (
     !loading && (
       <div className="App">
+          <ScrollToTop />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="Gallery" element={<Gallery />} />
-          <Route path="GulKaari" element={<GulKaari/>} />
-          <Route path="PRAKRIKALA" element={<PRAKRIKALA/>} />
-          <Route path="DHARINI" element={<DHARINI/>} />
-          <Route path="Adva" element={<Adva/>}/>
-          <Route path="Aveksha" element={<Aveksha/>}/>
-
+          <Route path="GulKaari" element={<GulKaari />} />
+          <Route path="PRAKRIKALA" element={<PRAKRIKALA />} />
+          <Route path="DHARINI" element={<DHARINI />} />
+          <Route path="Adva" element={<Adva />} />
+          <Route path="Aveksha" element={<Aveksha />} />
         </Routes>
       </div>
     )

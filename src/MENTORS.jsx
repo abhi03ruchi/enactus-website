@@ -16,8 +16,7 @@ export class MENTORS extends Component {
                         <div class="content">
                             {/* <h2>Spider puzzle</h2>
     <h3>carlos rodiguez armando</h3> */}
-                            <p>The projects undertaken by Enactus IGDTUW are for the sole purpose of uplifting communities and improving their livelihoods while simultaneously honing their skills to become socially aware and responsible entrepreneurs. Enactus's ideology is centered around three pillars - seeing an opportunity, taking action, and enabling progress.
-I proudly acknowledge the remarkable efforts of our dedicated volunteers who have contributed to the creation of this publication. It has been a longstanding aspiration of ours to develop a newsletter that not only exhibits the writings of our students but also recognizes the exceptional volunteering work of our entire team. I extend my heartfelt appreciation to the team for their incredible work and wish them all success in their future endeavors.</p></div>
+                            <p>The projects undertaken by Enactus IGDTUW are for the sole purpose of uplifting communities & improving their livelihoods while simultaneously honing their skills to become socially aware and responsible entrepreneurs. Enactus's ideology is centered around three pillars-seeing an opportunity, taking action, and enabling progress.I proudly acknowledge the remarkable efforts of our dedicated volunteers who have contributed to the creation of this publication. It has been a longstanding aspiration of ours to develop a newsletter that not only exhibits the writings of our students but also recognizes the exceptional volunteering work of our entire team. I extend my heartfelt appreciation to the team for their incredible work & wish them all success in their future endeavors.</p></div>
 
                     </div>
                     <div class="box">
