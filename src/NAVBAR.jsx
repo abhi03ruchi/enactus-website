@@ -1,5 +1,5 @@
-import React from 'react'
-import ScrollToTop from "./ScrollToTop";
+import React, { useRef } from 'react'
+
 import { Typography } from "@mui/material";
 // import  Collection from './Project'
 import { Link } from "react-router-dom";
@@ -14,36 +14,24 @@ import './NAVBAR.css'
 export default function NAVBAR() {
     return (
         <header>
-        <Link to="/">
-          <img src={logo} className="logo" alt="Logo" />
-        </Link>
-        <input type="checkbox" id="nav-toggle" className="nav-toggle" />
-        <nav>
-          <ul>
-            <li>
-              <Link to="/about">About</Link>
-            </li>
-            <li>
-              <Link to="/#mission">Mission</Link>
-            </li>
-            <li>
-              <Link to="/projects">Projects</Link>
-            </li>
-            <li>
-              <Link to="/gallery">Gallery</Link>
-            </li>
-            <li>
-              <Link to="/events">Events</Link>
-            </li>
-            <li>
-              <Link to="/contact">Contact</Link>
-            </li>
-          </ul>
-        </nav>
-        <label htmlFor="nav-toggle" className="nav-toggle-label">
-          <span></span>
-        </label>
-      </header>
+          <Link to='/'>
+            <img src={logo} className="logo"/>
+            </Link>
+            <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#Mission">Mission</a></li>
+                    <li><a href="#project">Projects</a></li>
+                    <li><Link to ='/Gallery'>Gallery</Link></li>
+                    <li><Link to ='/Events'>Events</Link></li>
+                    <li><a href="#footer">Contact</a></li>
+                </ul>
+            </nav>
+            <label for="nav-toggle" class="nav-toggle-label">
+                <span></span>
+            </label>
+        </header>
     )
 };
 

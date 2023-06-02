@@ -18,20 +18,15 @@ export default function PRAKRIKALA() {
 
     const scrollToSection = (elementRef) => {
         window.scrollTo({
-          top: elementRef.current.offsetTop,
-          behavior: "smooth",
+            top: elementRef.current.offsetTop,
+            behavior: "smooth",
         });
     };
 
     return (
-        <div className="pari-app">
+        <>
             <div className="pari-home">
-                {/* <div className="nav">
-                    <div className="img1" > <img src={logo} alt="LOGO" /></div>
-                    <img className="img2" src={imag2} alt="MENU" />
-                </div> */}
-                <NAVBAR/>
-                {/* <MENU/> */}
+                <NAVBAR />
                 <div className="pari-sections">
                     <div className="left">
                         <img src={imag3} alt="prakLOGO" className="img3" />
@@ -42,7 +37,7 @@ export default function PRAKRIKALA() {
                             Prakri-Kala is an eco-centric enterprise that upcycles locally sourced waste to create innovative products and promote the socio-economic welfare of underrepresented communities.
                         </Typography>
                         <button onClick={() => scrollToSection(Overview)}>LEARN MORE</button>
-                        <div><img className="img4" src={imag4} alt="button" /> </div>
+                        <div> </div>
                     </div>
                 </div>
             </div>
@@ -51,12 +46,12 @@ export default function PRAKRIKALA() {
             <div ref={Overview} className="pari-overview">
                 <div className="left">
                     <div className="overview-content">
-                        <Typography variant="h2" align="center" fontFamily={'Rubik'} fontSize={75} sx={{ color: "#20CD8D", marginTop: 15, marginBottom: 8, fontWeight: 650 }}> Overview</Typography>
+                        <Typography variant="h2" align="center" fontFamily={'Rubik'} fontSize={75} sx={{ color: "#20CD8D", marginTop: 0, marginBottom: 8, fontWeight: 650 }}> Overview</Typography>
 
                         <Typography variant="body1" align="center" sx={{ fontSize: 20, color: "#222344", marginRight: 35, marginLeft: 35, marginBottom: 12 }}>Project Gulkaari is an initiative under Enactus IGDTUW.
                             Welcome to Prakri-Kala, an eco-centric enterprise dedicated to waste management and environmental sustainability, especially in urban areas. Our novel waste management techniques cover four subdomains: paper, waste cloth, bio waste, and plastic waste. Our locally sourced urban refuse is transformed into cutting-edge upcycled goods crafted by underrepresented populations, promoting their socio-economic welfare. We are committed to allocating a significant portion of our revenue from merchandise sales to support these communities. Join us in addressing waste management and environmental sustainability issues while promoting social and economic empowerment for underrepresented communities. </Typography>
                     </div>
-                    <button>Get In Touch</button>
+                    <button  onClick={() => scrollToSection(Footer)}>Get In Touch</button>
                 </div>
             </div>
 
@@ -108,14 +103,11 @@ export default function PRAKRIKALA() {
                 </div>
             </div>
 
-            <div className="footer">
+            <div className="footer"  ref={Footer}>
                 <div className="white-container"></div>
                 <Typography variant="body1" align="center" sx={{ color: "white", margin: 2, fontWeight: 650, fontSize: 20 }}>Enactus IGDTUW Copyright @ 2023 </Typography>
             </div>
-
-
-
-        </div>
+        </>
     )
 };
 

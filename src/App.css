@@ -2,15 +2,20 @@
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css);
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
+
+
 body {
   background-color: black;
   color: white;
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 
 .link {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: 'Rubik', sans-serif;
 }
 
 .services span {
@@ -41,41 +46,126 @@ body {
   padding: 20px;
 }
 
-.section-title {
-  font-size: 2.5rem;
-  font-weight: 700;
-  margin-bottom: 20px;
-  text-align: left;
-}
-.services-content img {
-  height: 19rem;
-}
-.services-content {
+
+/* section 1 */
+
+.red {
+  /* min-height: 100vh; */
+  /* background-color: #fff5d7; */
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
   align-items: center;
-  justify-content: center;
-  margin-bottom: 45px;
+  /* background-color: brown; */
 }
 
-
-/* responsiveness of about us section */
-
-/* Styles for mobile */
-@media (max-width: 600px) {
-  .services-content {
-    flex-direction: column;
-  }
-  img{
-    width: 100%;
-  }
+.left {
+  flex: 0.5;
+  padding: 65px;
+  margin: 30px;
+  /* background-color: #61DAFB; */
 }
 
-/* Styles for tablet */
-@media (min-width: 601px) and (max-width: 1024px) {
-  .services-content {
-    flex-direction: row;
+.left h1 {
+  font-family: 'Rubik', sans-serif;
+  position: relative;
+  font-size: 60px;
+  font-weight: 700;
+  top: -30px;
+  text-align: center;
+}
+.left span{
+  color: #FFC122;
+}
+
+.right {
+  flex: 0.4;
+  padding-top: 20px;
+  /* background-color: orange; */
+}
+
+.right img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+section .left p {
+  margin-bottom: 50px;
+  text-align: justify;
+  font-size: 20px;
+  font-family: 'Rubik', sans-serif;
+
+}
+
+section .left a {
+  padding: 10px 20px;
+  border-radius: 4px;
+  outline: none;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 500;
+  text-decoration: none;
+  letter-spacing: 1px;
+  transition: all 0.5s ease;
+}
+section .buttons{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 50px;
+}
+section .left .btnone {
+  /*background: #00b894;*/
+  background: #fff5d7;
+  color: #000;
+  border: 2px solid black;
+}
+
+section .left .btnone:hover {
+  background: #ff5e6c;
+  color: white;
+}
+
+section .left .btntwo {
+  background: #ff5e6c;
+  color: white;
+}
+
+@media screen and (max-width: 960px){
+  .red{
+      top: 100px;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
   }
+  .left{
+      margin: 0px;
+      padding-top: 150px;
+  }
+  .right{
+      margin: 0px;
+      padding: 10px;
+  }
+  .left h1{
+      font-size: 40px;
+  }
+  .left p{
+      font-size: 15px;
+      text-align: justify;
+  }
+  .left .buttons{
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+  .left .buttons{
+      font-size: 45px;
+  }
+  .left .btnone{
+      margin-bottom: 20px;
+  }
+
 }
 
 /* .project {
@@ -907,6 +997,9 @@ button.ghost-btn:hover {
     bottom: 0;
     right: 0;
     /* background-color: #20CD8D; */
+  }
+  .copyright{
+    background-color: #000;
   }
   .meaning-text {
     font-size: 20px;

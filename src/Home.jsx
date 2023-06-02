@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 // import Button from 'react';
-import ScrollToTop from "./ScrollToTop";
+
 import { Typography } from "@mui/material";
 // import  Collection from './Project'
 import { Link } from "react-router-dom";
@@ -35,31 +35,7 @@ export default function Home() {
   return (
     <div>
       {/* <ScrollToTop /> */}
-      <div >
         <NAVBAR />
-        {/* <div className="left">
-          <img src={logo} alt="" />
-        </div> */}
-
-        {/* <ul className="navi">
-          <li onClick={() => scrollToSection(AboutUs)} className="link">
-            About Us
-          </li>
-          <li onClick={() => scrollToSection(Mission)} className="link">
-            Mission
-          </li>
-          <li onClick={() => scrollToSection(Project)} className="link">
-            Projects
-          </li>
-          <Link to="/Gallery">
-            <li className="link">
-              Gallery
-            </li></Link>
-          <li onClick={() => scrollToSection(Footer)} className="link">
-            Contact Us
-          </li>
-        </ul> */}
-      </div>
 
       <div>
         <Typography variant="h1" align="center" sx={{ color: "white", marginTop: 8, fontWeight: 750 }}><span className="change-content"></span></Typography>
@@ -67,22 +43,32 @@ export default function Home() {
 
 
       {/* ref={AboutUs} */}
-      <div className="services">
+      <div className="services" id='about' >
         <div className="yellow-container"></div>
-        <div className="aboutUs">
-        <Typography align="center" variant="h2" sx={{ color: "white", margin: 5, fontWeight: 650 }}>ABOUT <span> US </span> </Typography>
-        </div>
-        <div className="services-content">
-          <Typography fontSize={18} textAlign={'center'} variant="body1" sx={{ color: "white", margin: 8 }}>Enactus India is a priority country for the future expansion of ENACTUS as one of the largest Enactus country operations. Students who take part organize into teams at their school and use business principles to create outreach initiatives. Teams are given a platform to present the outcomes of their projects and to be judged by business executives through the Enactus India National Competition. As the students of India’s first all-women technical varsity, we are determined to empower the oppressed through entrepreneurial awakening. We at Enactus Indira Gandhi Delhi Technical University for Women aspire to create a better world. We are a team of strong-headed 60 girls and we believe that technology along with entrepreneurial actions will drive a great impact on everyone.</Typography>
+        {/* about us section  */}
+        <section class="red">
+          <div class="left">
+            <h1>ABOUT <span>US </span> </h1>
+            <p> Enactus India is a priority country for the future expansion of ENACTUS as one of the largest Enactus country operations. Students who take part organize into teams at their school and use business principles to create outreach initiatives. Teams are given a platform to present the outcomes of their projects and to be judged by business executives through the Enactus India National Competition. As the students of India’s first all-women technical varsity, we are determined to empower the oppressed through entrepreneurial awakening. We at Enactus Indira Gandhi Delhi Technical University for Women aspire to create a better world. We are a team of strong-headed 60 girls and we believe that technology along with entrepreneurial actions will drive a great impact on everyone.
+            </p>
+            {/* <div class="buttons">
+              <a href="#" class="btnone">You Are Not Alone</a>
+              <a href="https://t.me/+UcjAd-jZteM3Mzg1" class="btntwo">Join The Community </a>
+            </div> */}
+          </div>
+          <div class="right">
           <img src={teamPic} alt="teamPic" />
-        </div>
+          </div>
+        </section>
+
+
         <div className="yellow-container"></div>
       </div>
 
 
 
 
-      <div className="blog">
+      <div className="blog" id="Mission">
         <Typography align="center" variant="h2" sx={{ color: "white", margin: 5, fontWeight: 650 }}>OUR <span>  VALUES </span></Typography>
 
         <div class="wraps">
@@ -161,7 +147,7 @@ export default function Home() {
 
       <div className="project">
         <Typography align="center" variant="h2" sx={{ color: "white", margin: 5, fontWeight: 650 }}>OUR<span>  PROJECTS</span></Typography>
-        <PROJECT/>
+        <PROJECT />
       </div>
 
 
@@ -174,11 +160,11 @@ export default function Home() {
 
 
 
-      <div className="site-footer">
+      <div className="site-footer" id="footer">
         <div className="north">
           <Typography bgcolor={'black'} variant="h2" align="left" fontFamily={'Rubik'} fontSize={25} sx={{ paddingLeft: 0, paddingTop: 2, margin: 1.5, color: "whitesmoke", fontWeight: 650 }}> Contact Us </Typography>
           <div className="one"> <ion-icon className="ions" name="location-sharp"></ion-icon>
-            <div className="text">Indira Gandhi Delhi Technical University for women,  <br />
+            <div className="text">Indira Gandhi Delhi Technical University for Women,  <br />
               Opp to James church, delhi-110006</div>
           </div>
           <div className="one"><ion-icon name="call-sharp"></ion-icon>
@@ -208,7 +194,7 @@ export default function Home() {
           <div className="follow">
             <div class="col-md-4 col-sm-6 col-xs-12">
               <ul class="social-icons">
-                <li><a class="twitter" href="#"><i class="fa fa-tree" aria-hidden="true"></i></a></li>
+                <li><a class="twitter" href="https://linktr.ee/Enactus_IGDTUW"><i class="fa fa-tree" aria-hidden="true"></i></a></li>
                 <li><a class="instagram" href="https://instagram.com/enactus.igdtuw?igshid=MzRlODBiNWFlZA=="><i class="fa fa-instagram"></i></a></li>
                 <li><a class="linkedin" href="https://www.linkedin.com/company/enactusigdtuw/"><i class="fa fa-linkedin"></i></a></li>
               </ul>
