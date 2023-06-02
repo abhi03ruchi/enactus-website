@@ -68,8 +68,8 @@ export default function PRAKRIKALA() {
                             Opp to James church, delhi-110006</div>
                     </div>
                     <div className="one"><ion-icon name="call-sharp"></ion-icon>
-                        <div className="text">  Eeshika Madaan: +91 85955 81045 <br />
-                            Adhya Mittal: +91 77039 20800
+                        <div className="text">  Kangana Roshan: <br />
+                        M Deekshitha Reddy:
                         </div>
                     </div>
                     <div className="one"> <ion-icon name="mail-sharp"></ion-icon>

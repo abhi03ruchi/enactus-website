@@ -9,6 +9,7 @@ import MENTORS from './MENTORS';
 import logo from './homeAssets/Enactus.png'
 import teamPic from './homeAssets/teamPic.jpg'
 import NAVBAR from './NAVBAR'
+import Achievements from "./Achievement";
 import PROJECT from './PROJECT';
 // import { Grid } from "@mui/material";
 
@@ -78,12 +79,11 @@ export default function Home() {
                 <div class="front" >
                   <div class="inner">
                     <p>Integrity</p>
-                    <span>Lorem ipsum</span>
                   </div>
                 </div>
                 <div class="back">
                   <div class="inner">
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.</p>
+                    <p>We uphold integrity in all our projects by ensuring that decisions are made considering ethical guidelines and a sense of accountability.</p>
                   </div>
                 </div>
               </div>
@@ -93,12 +93,11 @@ export default function Home() {
                 <div class="front" >
                   <div class="inner">
                     <p>Innovation</p>
-                    <span>Lorem ipsum</span>
                   </div>
                 </div>
                 <div class="back">
                   <div class="inner">
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.</p>
+                    <p>We foster a culture of innovation in each of our projects to develop unique and sustainable solutions.</p>
                   </div>
                 </div>
               </div>
@@ -108,12 +107,11 @@ export default function Home() {
                 <div class="front" >
                   <div class="inner">
                     <p>Passion</p>
-                    <span>Lorem ipsum</span>
                   </div>
                 </div>
                 <div class="back">
                   <div class="inner">
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.</p>
+                    <p>We have passion for creating a positive impact which is evident in the dedication and commitment of team members</p>
                   </div>
                 </div>
               </div>
@@ -123,12 +121,11 @@ export default function Home() {
                 <div class="front" >
                   <div class="inner">
                     <p>Collaboration</p>
-                    <span>Lorem ipsum</span>
                   </div>
                 </div>
                 <div class="back">
                   <div class="inner">
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.</p>
+                    <p>We understand the significance of collaboration and actively seek partnerships to amplify the impact.</p>
                   </div>
                 </div>
               </div>
@@ -149,8 +146,15 @@ export default function Home() {
         <Typography align="center" variant="h2" sx={{ color: "white", margin: 5, fontWeight: 650 }}>OUR<span>  PROJECTS</span></Typography>
         <PROJECT />
       </div>
-
-
+      <div className="yellow-container"></div>
+      
+      
+      <div className="team">
+        <Typography align="center" variant="h2" sx={{ color: "white", margin: 8, fontWeight: 650, marginTop: 7, marginBottom: 10 }}> <span> GLANCE AT  </span> OUR ACHIEVEMENTS </Typography>
+            <Achievements/>
+      </div>
+      <br/>
+      <br/>
       <div className="yellow-container"></div>
       <div className="team">
         <Typography align="center" variant="h2" sx={{ color: "white", margin: 8, fontWeight: 650, marginTop: 7, marginBottom: 10 }}> <span> OUR  </span> MENTORS </Typography>

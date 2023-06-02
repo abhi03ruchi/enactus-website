@@ -1,7 +1,5 @@
 import React from 'react'
 import './PROJECT.css'
-import logo from './homeAssets/Enactus.png'
-import teamPic from './homeAssets/teamPic.jpg'
 import Adva from './homeAssets/Adva.png';
 import Avesha from './homeAssets/ANIMALS.png';
 import GulKaari from './homeAssets/GoalsGulkaari.png';

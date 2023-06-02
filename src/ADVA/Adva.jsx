@@ -94,7 +94,7 @@ new community
                 </div>
             </div>
 
-            <Typography variant="h2" fontSize={65} align="center" sx={{ color: "#222344", marginTop: 10, marginBottom: 8, fontWeight: 650 }}> Sustainable Development Goals</Typography>
+            <Typography variant="h2" fontSize={65} align="center" sx={{ color: "#222344", marginTop: 10, marginBottom: 10, fontWeight: 650 }}> Sustainable Development Goals</Typography>
 
             <ul id="categories" class="clr">
                 <li class="pusher"></li>
@@ -190,7 +190,7 @@ new community
                             Opp to James church, delhi-110006</div>
                     </div>
                     <div className="one"><ion-icon name="call-sharp"></ion-icon>
-                        <div className="text">  Eeshika Madaan: +91 85955 81045 <br />
+                        <div className="text">  Shreya Agarwal: <br />
                             Adhya Mittal: +91 77039 20800
                         </div>
                     </div>
