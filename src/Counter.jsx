@@ -34,7 +34,6 @@ function MyComponent() {
 			<section id="counter-stats" class="wow fadeInRight" data-wow-duration="1.4s">
 				<div class="containers">
 					<div class="row">
-
 						<div class="col-lg-3 stats">
 							<i class="fa fa-code" aria-hidden="true"></i>
 							<div class="counting" data-count="25">0</div>

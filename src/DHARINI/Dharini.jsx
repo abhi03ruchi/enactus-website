@@ -15,7 +15,9 @@ import sustain from "./assets/sustain.png"
 import ach1 from "./assets/ach1.png"
 import ach2 from "./assets/ach2.png"
 import ach3 from "./assets/ach3.png"
-import MENU from "./menu.jsx"
+
+import NAVBAR from "../NAVBAR";
+import CircleImpact from "./CircularImpact";
 // import HamburgerDropdown from "./HamburgerDropdown"
 
 
@@ -37,17 +39,18 @@ export default function Dharini() {
     const achievments = useRef(null);
     const Footer = useRef(null);
 
+    const scrollToSection = (elementRef) => {
+        window.scrollTo({
+            top: elementRef.current.offsetTop,
+            behavior: "smooth",
+        });
+    };
+
     return (
 
         <div className="dha-app">
             <div className="dha-home">
-                <div className="nav">
-                    <div className="img1" ><img src={logo} alt="logo" /></div>
-                    {/* <img className="img2" src={lines} alt="icon" /> 
-                                        <MENU value={value} handleClick={handleClick}/>
-*/}
-                    {/* <HamburgerDropdown/> */}
-                </div>
+                <NAVBAR/>
                 <div className="dha-sections">
                     <div className="left">
                         <img src={dhariniLogo} alt="" />
@@ -57,7 +60,7 @@ export default function Dharini() {
                         <Typography align="left" fontSize={26} variant="body1" sx={{ color: "white", marginTop: 5, marginBottom: 4 }}>
                             An initiative to spread awareness and services for menstrual and sexual health while advocating inclusivity across all genders.
                         </Typography>
-                        <button>LEARN MORE</button>
+                        <button  onClick={() => scrollToSection(Overview)} >LEARN MORE</button>
                     </div>
                 </div>
             </div>
@@ -72,7 +75,7 @@ export default function Dharini() {
                         <Typography align="left" variant="body1" fontFamily={'Arimo'} fontSize={22} sx={{ color: "#222344", margin: 9, marginBottom: 10 }}>Project Dharini is an initiative under Enactus IGDTUW.
                             Dharini represents the earth, the support system or bearer of community. For humans, it is all of us. Every person who bleeds, who goes through large ordeals, Dharini represents every one of them.<br />
                             We work towards the empowerment of all menstruators by advocating gender inclusivity, menstrual and sexual awareness. In the past we have conducted sessions with an audience ranging from children to adults and impacted 4000+ women, 2000+ children and 100 trans folk so far. </Typography>
-                        <button>Get In Touch</button>
+                        <button  onClick={() => scrollToSection(Footer)}>Get In Touch</button>
                     </div>
 
                 </div>
@@ -180,9 +183,11 @@ export default function Dharini() {
             <div ref={goals} className="dha-goals">
                 <div className="impact">
                     <Typography variant="h2" fontFamily={'Libre Baskerville'} align="center" sx={{ color: "#222344", marginTop: 0, marginLeft: 0, marginBottom: 5, fontWeight: 650 }}>Impact Generated</Typography>
+
+                    <CircleImpact/>
                 </div>
                 <div className="goal">
-                    <Typography variant="h2" align="left" fontFamily={'Libre Baskerville'} sx={{ color: "#222344", marginTop: 0, marginLeft: 0, marginBottom: 5, fontWeight: 650 }}>Sustainable Development Goals</Typography>
+                    <Typography variant="h2" align="left" fontFamily={'Libre Baskerville'} sx={{  color: "#222344" ,textAlign:'center',marginBottom: 5, fontWeight: 650 }}>Sustainable Development Goals</Typography>
                     <img src={sustain} alt="" />
                 </div>
             </div>
@@ -192,24 +197,6 @@ export default function Dharini() {
 
                 <Typography variant="h5" fontFamily={'Libre Baskerville'} align="center" sx={{ color: "#FEFFD1", paddingTop: 0, marginLeft: 0, marginBottom: 0, fontWeight: 250 }}>The ones who support us in our intiative</Typography>
 
-                {/* <div className="box">
-                        <div className="collabs">
-                            <img src={logo1} alt="" />
-                            
-                        </div>
-                        <div className="collabs">
-                            <img src={logo2} alt="" />
-                        </div>
-                        <div className="collabs">
-                            <img src={logo3} alt="" />
-                        </div>
-                        <div className="collabs">
-                            <img src={logo4} alt="" />
-                        </div>
-                        <div className="collabs">
-                            <img src={logo5} alt="" />
-                        </div>
-                    </div> */}
             </div>
 
             <div ref={achievments} className="dha-ach">
@@ -263,41 +250,55 @@ export default function Dharini() {
 
             </div>
 
-
-            <Typography bgcolor={'black'} variant="h2" align="left" fontFamily={'Rubik'} fontSize={25} sx={{ paddingLeft: 2, paddingTop: 2, margin: 1.5, color: "whitesmoke", fontWeight: 650 }}> Contact Us </Typography>
-            <div ref={Footer} className="site-footer">
+            <div className="site-footer" ref={Footer}>
                 <div className="north">
+                    <Typography bgcolor={'black'} variant="h2" align="left" fontFamily={'Rubik'} fontSize={25} sx={{ paddingLeft: 0, paddingTop: 2, margin: 1.5, color: "whitesmoke", fontWeight: 650 }}> Contact Us </Typography>
                     <div className="one"> <ion-icon className="ions" name="location-sharp"></ion-icon>
                         <div className="text">Indira Gandhi Delhi Technical University for women,  <br />
                             Opp to James church, delhi-110006</div>
                     </div>
                     <div className="one"><ion-icon name="call-sharp"></ion-icon>
-                        <div className="text">  Kangana Roshan: 9546357899 <br />
-                            M Deekshitha Reddy: 8076468201</div>
+                        <div className="text">  Eeshika Madaan: +91 85955 81045 <br />
+                            Adhya Mittal: +91 77039 20800
+                        </div>
                     </div>
                     <div className="one"> <ion-icon name="mail-sharp"></ion-icon>
-                        <div className="text">  projectgulkaari@gmail.com<br />
+                        <div className="text">
                             enactus.igdtuw@gmail.com</div>
                     </div>
+
                 </div>
                 <div className="south">
+                    <div className="enactusLogo">
+                        <img src={logo} alt="" />
+                    </div>
+                    <div className="meaning-text">
+                        <p>
+                            <span>En</span>trepreneurial - igniting business innovation with integrity and passion.<br />
+                            <span>Act</span>ion - the experience of social impact that sparks social enterprise.
+                            <br />
+                            <span>Us</span> - student, academic and business leaders collaborating to create a better world.
+                        </p>
+                    </div>
+
                     <div className="follow">
-                        <div className="ftext">Follow Us on: </div>
                         <div class="col-md-4 col-sm-6 col-xs-12">
                             <ul class="social-icons">
                                 <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
                                 <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li><a class="instagram" href="#"><i class="fa fa-instagram"></i></a></li>
-                                <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+                                <li><a class="instagram" href="https://instagram.com/enactus.igdtuw?igshid=MzRlODBiNWFlZA=="><i class="fa fa-instagram"></i></a></li>
+                                <li><a class="linkedin" href="https://www.linkedin.com/company/enactusigdtuw/"><i class="fa fa-linkedin"></i></a></li>
                             </ul>
                         </div>
                     </div>
-                    <div className="enactusLogo">
-                        <img src={logo} alt="" />
-                    </div>
-                    <hr />
                 </div>
             </div>
+
+            <div className="footer">
+                <div className="white-container"></div>
+                <Typography variant="body1" align="center" sx={{ color: "white", margin: 2, fontWeight: 650, fontSize: 20 }}>Enactus IGDTUW Copyright @ 2023 </Typography>
+            </div>
+           
 
         </div>
 

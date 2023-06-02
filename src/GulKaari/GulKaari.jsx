@@ -13,15 +13,15 @@ import imag8 from './assets/sustain.png';
 // import GulGallery from './GulGallery';
 import CircleImpact from './CircleImpact.jsx';
 import logo from './assets/Enactus.png'
-import MENU from "./menu.jsx"
+import NAVBAR from "../NAVBAR";
 
 
 export default function GulKaari() {
 
-    const [value , setValue] = useState(false);
+    const [value, setValue] = useState(false);
     const handleClick = () => {
         setValue(!value);
-      };
+    };
 
 
     const Overview = useRef(null);
@@ -35,18 +35,14 @@ export default function GulKaari() {
 
     const scrollToSection = (elementRef) => {
         window.scrollTo({
-          top: elementRef.current.offsetTop,
-          behavior: "smooth",
+            top: elementRef.current.offsetTop,
+            behavior: "smooth",
         });
     };
     return (
-        <div className="gul-app">
+        <>
             <div className="gul-home">
-                <div className="nav">
-                    <div className="img1" ><img src={imag1} alt="logo" /></div>
-                    {/* <img className="img2" src={imag2} alt="icon" /> 
-                    <MENU value={value} handleClick={handleClick}/>*/}
-                </div>
+                <NAVBAR />
                 <div className="gul-sections">
                     <div className="left">
                         <img src={imag3} alt="" />
@@ -58,7 +54,7 @@ export default function GulKaari() {
 
                             An initiative to achieve social, economic, and cultural changes in society by providing better sales to the product and the dying arts of communities.
                         </Typography>
-                        <button onClick={()=>scrollToSection(Overview)}>LEARN MORE</button>
+                        <button onClick={() => scrollToSection(Overview)}>LEARN MORE</button>
                     </div>
                 </div>
             </div>
@@ -70,7 +66,7 @@ export default function GulKaari() {
 
                         <Typography align="left" variant="body1" fontSize={20} sx={{ color: "#222344", margin: 9, marginBottom: 10 }}>Project Gulkaari is an initiative under Enactus IGDTUW.
                             Gulkaari represents the communities' art, beauty, intricacy, and adornment. We work towards  identifying and enhancing the limited skill set and employability of most disadvantaged in the community,this project brings about upliftment and financial independence of the needy. In the past we have worked with communities ranging from women of Rohingya to artisans of Banjara community and impacted 180+ lives so far. </Typography>
-                        <button>Get In Touch</button>
+                        <button onClick={() => scrollToSection(Footer)} >Get In Touch</button>
                     </div>
                     {/* <button>Get In Touch</button> */}
 
@@ -100,14 +96,8 @@ export default function GulKaari() {
                     </div>
                 </div>
             </div>
-
-            {/* <div ref={Gallery} className="gul-gallery">
-                <Typography variant="h2" align="center" sx={{ color: "#222344", marginTop: -2, marginLeft: 17, fontWeight: 650 }}>Gallery</Typography>
-                <GulGallery />
-            </div> */}
-
             <div ref={Gallery2} className="gul-gallery">
-                <Typography variant="h2" align="center" sx={{ color: "#222344", marginTop: -10,marginBottom: 5, marginLeft: 0, fontWeight: 650 }}>Gallery</Typography>
+                <Typography variant="h2" align="center" sx={{ color: "#222344", marginTop: -10, marginBottom: 5, marginLeft: 0, fontWeight: 650 }}>Gallery</Typography>
 
                 <div class="container">
                     <div class="carousel">
@@ -203,7 +193,7 @@ export default function GulKaari() {
             </div>
 
             <div ref={How} className="gul-how">
-                <Typography variant="h2" align="center" sx={{ color: "#222344", marginTop: 0, fontWeight: 650 }}></Typography>
+                <Typography variant="h2" align="center" sx={{ color: "#222344", marginTop: 0,paddingTop:10, fontWeight: 650 }}></Typography>
                 <div className="guls">
                     <div className="phase1">Phase 02</div>
                     <div className="part">
@@ -269,7 +259,7 @@ export default function GulKaari() {
             </div>
 
             <div ref={Impact} className="gul-impact">
-                <Typography variant="h2" align="center" sx={{ color: "#222344", marginTop: 0, padding: 8, marginLeft: 17, fontWeight: 650 }}>Impact Generated</Typography>
+                <Typography variant="h2" align="center" sx={{ color: "#222344", fontWeight: 650, paddingTop:10, }}>Impact Generated</Typography>
 
                 <CircleImpact />
 
@@ -281,47 +271,54 @@ export default function GulKaari() {
                 <img src={imag8} alt="sustain" />
             </div>
 
-
-
-            <Typography bgcolor={'black'} variant="h2" align="left" fontFamily={'Rubik'} fontSize={25} sx={{ paddingLeft: 2, paddingTop: 2, margin: 1.5, color: "whitesmoke", fontWeight: 650 }}> Contact Us </Typography>
-            <div ref={Footer} className="site-footer">
+            <div  ref={Footer} className="site-footer">
                 <div className="north">
+                    <Typography bgcolor={'black'} variant="h2" align="left" fontFamily={'Rubik'} fontSize={25} sx={{ paddingLeft: 0, paddingTop: 2, margin: 1.5, color: "whitesmoke", fontWeight: 650 }}> Contact Us </Typography>
                     <div className="one"> <ion-icon className="ions" name="location-sharp"></ion-icon>
                         <div className="text">Indira Gandhi Delhi Technical University for women,  <br />
                             Opp to James church, delhi-110006</div>
                     </div>
                     <div className="one"><ion-icon name="call-sharp"></ion-icon>
-                        <div className="text">  Kangana Roshan: 9546357899 <br />
-                            M Deekshitha Reddy: 8076468201</div>
+                        <div className="text">  Kangana Roshan: 9546357899<br/>
+                           M Deekshitha Reddy: 8076468201
+                        </div>
                     </div>
                     <div className="one"> <ion-icon name="mail-sharp"></ion-icon>
-                        <div className="text">  projectgulkaari@gmail.com<br />
+                        <div className="text">
                             enactus.igdtuw@gmail.com</div>
                     </div>
+
                 </div>
                 <div className="south">
+                    <div className="enactusLogo">
+                        <img src={logo} alt="" />
+                    </div>
+                    <div className="meaning-text">
+                        <p>
+                            <span>En</span>trepreneurial - igniting business innovation with integrity and passion.<br />
+                            <span>Act</span>ion - the experience of social impact that sparks social enterprise.
+                            <br />
+                            <span>Us</span> - student, academic and business leaders collaborating to create a better world.
+                        </p>
+                    </div>
+
                     <div className="follow">
-                        <div className="ftext">Follow Us on: </div>
                         <div class="col-md-4 col-sm-6 col-xs-12">
                             <ul class="social-icons">
                                 <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
                                 <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li><a class="instagram" href="#"><i class="fa fa-instagram"></i></a></li>
-                                <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+                                <li><a class="instagram" href="https://instagram.com/enactus.igdtuw?igshid=MzRlODBiNWFlZA=="><i class="fa fa-instagram"></i></a></li>
+                                <li><a class="linkedin" href="https://www.linkedin.com/company/enactusigdtuw/"><i class="fa fa-linkedin"></i></a></li>
                             </ul>
                         </div>
                     </div>
-                    <div className="enactusLogo">
-                        <img src={logo} alt="" />
-                    </div>
-                    <hr />
                 </div>
             </div>
 
-
-
-
-        </div>
-
+            <div className="copyright">
+                <div className="white-container"></div>
+                <Typography variant="body1" align="center" sx={{ backgroundColor:'black' , color: "white", fontWeight: 650,marginBottom:2 ,  fontSize: 20 }}>Enactus IGDTUW Copyright @ 2023 </Typography>
+            </div>
+        </>
     )
 };

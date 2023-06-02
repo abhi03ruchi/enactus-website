@@ -159,10 +159,10 @@
     height: 90%;
     font-family: "Roboto", sans-serif;
     /* background-color: #7d4848; */
-    background-color:#720303;
+    background-color:rgba(130, 6, 6, 0.77);
     /* background-color: #DF3A1E; */
     border-radius: 2em;
-    box-shadow: 0 0 2em rgba(0, 0, 0, .2);
+    box-shadow: 0px 0px 2em rgba(0, 0, 0, .2);
     padding: 2em 1em;
     display: flex;
     align-items: center;
@@ -258,13 +258,15 @@
 }
 .weflow .left{
     /* background-color: #ff5e6c; */
+    flex: 3;
 }
 .weflow .left img{
     height: 80vh;
 }
 .weflow .right{
     /* background-color: #ff5e6c; */
-    margin: 32px;
+    margin-right: 32px;
+    flex: 7;
 }
 .weflow .right .boxs{
     display: flex;
@@ -305,12 +307,17 @@
 }
 .dha-goals .impact{
     flex: 0.5;
-    background-color: lawngreen;
+    /* background-color: lawngreen; */
 }
 .dha-goals .goal{
     flex: 0.5;
-    margin-left: 20px;
-    background-color: plum;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    /* margin-left: 20px; */
+    /* background-color: plum; */
 }
 .dha-goals .goal img{
    height: 500px; 
@@ -558,3 +565,66 @@
         height: 80px;
       }
       
+
+      .dhacircle {
+        display: flex;
+        flex-direction: row;
+        justify-content:flex-start;
+        padding-left: 20px;
+        align-items: center;
+        min-height: 60vh;
+    }
+    
+    .dhacircle .dhax-box {
+        width: 40vh;
+        height: 40vh;
+        display: flex;
+        border-radius: 50%;
+        background: repeating-conic-gradient(
+            from 0deg,
+            #ff5252 0deg calc(3.6deg * 20),
+            #ef1373 calc(3.6deg * 20) calc(3.6deg * 60),
+            #dd72dd calc(3.6deg * 60) calc(3.6deg * 80),
+            #800080 calc(3.6deg * 80) calc(3.6deg * 100)
+        );
+    }
+
+    
+    .dhacircle  .dhhax-box-cont {
+        padding: 20px;
+        position: relative;
+        left: 100%;
+        margin-bottom: 40%;
+        background-color:rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+    }
+    
+    
+    .dhacircle   .dhhax-box-cont strong {
+        display: block;
+        margin-bottom:15px;
+        font-size: 20px;
+        color: black;
+        text-transform: capitalize;
+        font-family: Arial, Helvetica, sans-serif;
+        /* background-color: pink; */
+    }
+    #d{
+        color: #ff5252;
+    }
+    #e{
+        color: #ef1373;
+    }
+    #f{
+        color: #dd72dd;
+    }
+    #g{
+        color: #800080;
+    }
+    
+    
+    
+    
