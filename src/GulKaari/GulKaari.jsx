@@ -13,7 +13,6 @@ import imag8 from './assets/sustain.png';
 // import GulGallery from './GulGallery';
 import CircleImpact from './CircleImpact.jsx';
 import logo from './assets/Enactus.png'
-import MENU from "./menu.jsx"
 import NAVBAR from "../NAVBAR";
 
 
@@ -43,9 +42,7 @@ export default function GulKaari() {
     return (
         <>
             <div className="gul-home">
-                <div className="nav">
-                   <NAVBAR/>
-                </div>
+                <NAVBAR />
                 <div className="gul-sections">
                     <div className="left">
                         <img src={imag3} alt="" />
@@ -69,7 +66,7 @@ export default function GulKaari() {
 
                         <Typography align="left" variant="body1" fontSize={20} sx={{ color: "#222344", margin: 9, marginBottom: 10 }}>Project Gulkaari is an initiative under Enactus IGDTUW.
                             Gulkaari represents the communities' art, beauty, intricacy, and adornment. We work towards  identifying and enhancing the limited skill set and employability of most disadvantaged in the community,this project brings about upliftment and financial independence of the needy. In the past we have worked with communities ranging from women of Rohingya to artisans of Banjara community and impacted 180+ lives so far. </Typography>
-                        <button>Get In Touch</button>
+                        <button onClick={() => scrollToSection(Footer)} >Get In Touch</button>
                     </div>
                     {/* <button>Get In Touch</button> */}
 
@@ -99,12 +96,6 @@ export default function GulKaari() {
                     </div>
                 </div>
             </div>
-
-            {/* <div ref={Gallery} className="gul-gallery">
-                <Typography variant="h2" align="center" sx={{ color: "#222344", marginTop: -2, marginLeft: 17, fontWeight: 650 }}>Gallery</Typography>
-                <GulGallery />
-            </div> */}
-
             <div ref={Gallery2} className="gul-gallery">
                 <Typography variant="h2" align="center" sx={{ color: "#222344", marginTop: -10, marginBottom: 5, marginLeft: 0, fontWeight: 650 }}>Gallery</Typography>
 
@@ -202,7 +193,7 @@ export default function GulKaari() {
             </div>
 
             <div ref={How} className="gul-how">
-                <Typography variant="h2" align="center" sx={{ color: "#222344", marginTop: 0, fontWeight: 650 }}></Typography>
+                <Typography variant="h2" align="center" sx={{ color: "#222344", marginTop: 0,paddingTop:10, fontWeight: 650 }}></Typography>
                 <div className="guls">
                     <div className="phase1">Phase 02</div>
                     <div className="part">
@@ -268,7 +259,7 @@ export default function GulKaari() {
             </div>
 
             <div ref={Impact} className="gul-impact">
-                <Typography variant="h2" align="center" sx={{ color: "#222344", marginTop: 0, padding: 8, marginLeft: 17, fontWeight: 650 }}>Impact Generated</Typography>
+                <Typography variant="h2" align="center" sx={{ color: "#222344", fontWeight: 650, paddingTop:10, }}>Impact Generated</Typography>
 
                 <CircleImpact />
 
@@ -280,7 +271,7 @@ export default function GulKaari() {
                 <img src={imag8} alt="sustain" />
             </div>
 
-            <div className="site-footer">
+            <div  ref={Footer} className="site-footer">
                 <div className="north">
                     <Typography bgcolor={'black'} variant="h2" align="left" fontFamily={'Rubik'} fontSize={25} sx={{ paddingLeft: 0, paddingTop: 2, margin: 1.5, color: "whitesmoke", fontWeight: 650 }}> Contact Us </Typography>
                     <div className="one"> <ion-icon className="ions" name="location-sharp"></ion-icon>
@@ -288,8 +279,8 @@ export default function GulKaari() {
                             Opp to James church, delhi-110006</div>
                     </div>
                     <div className="one"><ion-icon name="call-sharp"></ion-icon>
-                        <div className="text">  Eeshika Madaan: +91 85955 81045 <br />
-                            Adhya Mittal: +91 77039 20800
+                        <div className="text">  Kangana Roshan: 9546357899<br/>
+                           M Deekshitha Reddy: 8076468201
                         </div>
                     </div>
                     <div className="one"> <ion-icon name="mail-sharp"></ion-icon>
@@ -324,11 +315,10 @@ export default function GulKaari() {
                 </div>
             </div>
 
-            <div className="footer">
+            <div className="copyright">
                 <div className="white-container"></div>
-                <Typography variant="body1" align="center" sx={{ color: "white", margin: 2, fontWeight: 650, fontSize: 20 }}>Enactus IGDTUW Copyright @ 2023 </Typography>
+                <Typography variant="body1" align="center" sx={{ backgroundColor:'black' , color: "white", fontWeight: 650,marginBottom:2 ,  fontSize: 20 }}>Enactus IGDTUW Copyright @ 2023 </Typography>
             </div>
         </>
-
     )
 };

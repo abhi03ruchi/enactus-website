@@ -1,14 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
 
-/* .gul-app {
-    background-color: black;
-} */
+/* fixing horizontal overflow */
 
+/* section 1 */
 .gul-home {
     height: 95vh;
     background-image: url('./assets/groupPhoto.png');
     padding: 0;
     margin: 0;
+    overflow: hidden;
+    background-color: #000;
     position: relative;
     isolation: isolate;
 }
@@ -22,13 +23,6 @@
     opacity: 0.5;
 }
 
-.nav {
-    /* background-color: #F2DEB9; */
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
 
 .gul-sections {
     display: flex;
@@ -39,7 +33,6 @@
 
 .gul-sections .left {
     flex: 0.4;
-    /* background-color: green; */
     margin-left: 100px;
     margin-right: 5px;
 }
@@ -48,23 +41,19 @@
     max-width: 100%;
     width: 300px;
     height: 400px;
-    /* background-color: red; */
 }
 
 .gul-sections .right {
     flex: 0.6;
     margin-left: -300px;
     padding-left: 30px;
-    /* background-color: red; */
 }
 
 .gul-sections .right button {
     font-family: "Roboto", sans-serif;
     text-transform: uppercase;
-    /* margin-left: 15%; */
     outline: 0;
     color: #3D5FAC;
-    /* width: 30%; */
     border: 0;
     padding: 20px;
     background: #F2DEB9;
@@ -76,9 +65,7 @@
 }
 
 .img1 {
-    /* max-width: 100%; */
     height: 100px;
-    /* background-color: purple; */
 }
 
 .img2 {
@@ -86,8 +73,11 @@
     height: 30px;
     padding: 20px;
     max-width: 100%;
-    /* background-color: purple; */
 }
+
+/* section1 mobile view 450px */
+
+
 
 .overview {
     height: 100vh;
@@ -96,10 +86,12 @@
     display: flex;
     flex-direction: row;
 }
-.gulkaari{
+
+.gulkaari {
     background-color: #F2DEB9;
 
 }
+
 .overview .left {
     flex: 0.5;
     display: flex;
@@ -217,6 +209,7 @@
 }
 
 .part {
+    font-family: "Roboto", sans-serif;
     display: flex;
     color: white;
     flex-direction: row;
@@ -226,10 +219,13 @@
 }
 
 .part .part2 {
+    font-family: "Roboto", sans-serif;
+    text-align: center;
     background-color: #5CB7B7;
     margin: 45px;
     max-height: 200px;
     width: 200px;
+    line-height: 1.2;
     font-weight: bolder;
     font-size: 15px;
     color: white;
@@ -295,7 +291,7 @@
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     text-align: center;
-    min-height: 200px;
+    min-height: 260px;
     height: auto;
     border-radius: 10px;
     color: #fff;
@@ -323,7 +319,7 @@
     content: '';
     display: block;
     opacity: .6;
-    background-color: #000;
+    background-color: #0f255a;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     border-radius: 10px;
@@ -438,19 +434,6 @@
     }
 }
 
-
-
-
-.gul-impact {
-    height: 100vh;
-    background-color: #F2DEB9;
-    padding: 0;
-    margin: 0;
-}
-
-
-
-
 .gul-goals {
     height: 100vh;
     background-color: #F2DEB9;
@@ -467,76 +450,162 @@
 
 }
 
-.gul-gallery .container{
+.gul-gallery .container {
     width: 100%;
-    display:block;
-    overflow:hidden;
-  }
-  .gul-gallery .carousel{
-    display:block;
+    display: block;
+    overflow: hidden;
+}
+
+.gul-gallery .carousel {
+    display: block;
     width: 100%;
     height: 400px;
     background: wheat;
     overflow-x: scroll;
     padding: 1px;
     margin: 0;
-    white-space: nowrap; 
+    white-space: nowrap;
     border-top: 2px solid rgba(0, 0, 0, 0.01);
     border-bottom: 2px solid rgba(0, 0, 0, 0.01);
-  }
-  .gul-gallery .item {
-      display: inline-block;
-      width: 380px;
-      margin: 0 10px;
-      height: 380px;
-      background: rgba(0, 0, 0, 0.05) no-repeat center center;
-      background-size: cover;
-      position:relative;
-      border-radius: 20px;
-      box-shadow: 0 0 10px #dfdfdf;
-  }
-  .gul-gallery  .item div{
+}
+
+.gul-gallery .item {
+    display: inline-block;
+    width: 380px;
+    margin: 0 10px;
+    height: 380px;
+    background: rgba(0, 0, 0, 0.05) no-repeat center center;
+    background-size: cover;
+    position: relative;
+    border-radius: 20px;
+    box-shadow: 0 0 10px #dfdfdf;
+}
+
+.gul-gallery .item div {
     width: 100%;
-    top:10%;
-    position:absolute;
-    text-align:center;
+    top: 10%;
+    position: absolute;
+    text-align: center;
     font-size: 9em;
     color: palegoldenrod;
+}
+.site-footer{
+    background-color: #000;
+}
+.copyright{
+    background-color: #000;
   }
-  #pic1{
+#pic1 {
     background-image: url('./assets/images/gul1.jpg');
-  }
-  #pic2{
+}
+
+#pic2 {
     background-image: url('./assets/images/gul2.jpg');
-  }
+}
 
-  #pic3{
+#pic3 {
     background-image: url('./assets/images/gul3.jpg');
-  }
-  #pic4{
+}
+
+#pic4 {
     background-image: url('./assets/images/gul4.jpg');
-  }
-  #pic5{
+}
+
+#pic5 {
     background-image: url('./assets/images/gul5.jpg');
-  }
-  #pic6{
+}
+
+#pic6 {
     background-image: url('./assets/images/gul6.jpg');
-  }
-  #pic7{
+}
+
+#pic7 {
     background-image: url('./assets/images/gul7.jpg');
-  }
-  #pic8{
+}
+
+#pic8 {
     background-image: url('./assets/images/gul8.jpg');
-  }
-  #pic9{
+}
+
+#pic9 {
     background-image: url('./assets/images/gul9.jpg');
-  }
-  #pic10{
+}
+
+#pic10 {
     background-image: url('./assets/images/gul10.jpg');
-  }
-  #pic11{
+}
+
+#pic11 {
     background-image: url('./assets/images/gul11.jpg');
-  }
+}
+
+/* circular Impact */
+
+.gul-impact {
+    height: 90vh;
+    background-color: #F2DEB9;
+    padding: 0;
+    margin: 0;
+}
+
+.circle {
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    min-height: 80vh;
+    /* background-color: pink; */
+}
+
+.circle .x-box {
+    width: 60vh;
+    height: 60vh;
+    display: flex;
+    border-radius: 50%;
+    background: repeating-conic-gradient(
+        from 0deg,
+        #3d5fac 0deg calc(3.6deg * 30.4),
+        #5ce1e6 calc(3.6deg * 30.4) calc(3.6deg * 39.1),
+        #5cb7b7 calc(3.6deg * 39.1) calc(3.6deg * 56.5),
+        #0097b2 calc(3.6deg * 56.5) calc(3.6deg * 100)
+    );
+}
+
+.circle  .x-box-cont {
+    font-size: 30px;
+    padding: 10px;
+    position: relative;
+    left: 105%;
+    margin-bottom: 60%;
+    background-color:rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
 
-  /* footer */
+.circle   .x-box-cont strong {
+    display: block;
+    margin-bottom:15px;
+    font-size: 20px;
+    color: black;
+    text-transform: capitalize;
+    font-family: Arial, Helvetica, sans-serif;
+    /* background-color: pink; */
+}
+#a{
+    color: #3d5fac;
+}
+#b{
+    color: #5ce1e6;
+}
+#c{
+    color: #5cb7b7;
+}
+#d{
+    color: #0097b2;
+}
+
+
+

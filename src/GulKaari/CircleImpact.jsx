@@ -1,43 +1,19 @@
 import React from 'react'
-// import { Bar} from 'react-chartjs-2'
-//import { Bar} from 'react-chartjs-2'
+import './GulKaari.css';
 
 const CircleImpact = ({chartData}) => {
-    const UserData = [
-        {
-          id: 1,
-          year: 2016,
-          userGain: 80000,
-          userLost: 823,
-        },
-        {
-          id: 2,
-          year: 2017,
-          userGain: 45677,
-          userLost: 345,
-        },
-        {
-          id: 3,
-          year: 2018,
-          userGain: 78888,
-          userLost: 555,
-        },
-        {
-          id: 4,
-          year: 2019,
-          userGain: 90000,
-          userLost: 4555,
-        },
-        {
-          id: 5,
-          year: 2020,
-          userGain: 4300,
-          userLost: 234,
-        },
-      ];
     return (
-        <div>
-            hello
+      <div className='circle'>
+        <div className='x-box'>
+          <div className='x-box-cont'>
+            {/* <h1>Seasons of year</h1> */}
+            <strong id='a'>total profit : Rs. 10877</strong>
+            <strong  id='b'>beneficiaries directly impacted : 12</strong>
+            <strong  id='c'>beneficiaries indirectly impacted : 174</strong>
+            <strong  id='d'>revenue generated : Rs. 15074</strong>
+          </div>
+            
+        </div>
         </div>
     )
 }

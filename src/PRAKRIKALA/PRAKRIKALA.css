@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
 .pari-app {
-     background-color: black;
+     background-color: #182527;
 }
 
 .pari-home {
@@ -10,12 +10,6 @@
     margin: 0;
 }
 
-.nav {
-    /* background-color: #F2DEB9; */
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
 .pari-sections{
     display: flex;
     flex-direction: row;
@@ -48,32 +42,13 @@
     transition: all 0.3 ease;
     cursor: pointer;
 }
-.img1 img {
-    margin-top: 1px;
-    height: 75px;
-    padding: 20px;
-    max-width: 100%;
-    /* background-color:wheat; */
-}
 
-.img2 img {
-    width: 60px;
-    height: 30px;
-    padding: 20px;
-    max-width: 100%;
-     /* background-color:wheat;  */
-} 
 
 .img3 {
     /* width: 260px; */
     /* height: 500px; */
     margin-top: 20px;
     max-width: 100%;
-}
-.img4{
-    height: 75px;
-    margin-left: 28%;
-    margin-top: 1%;
 }
 
 
@@ -89,13 +64,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-   
 }
-.pari-overview   .overview-content{
-  
-    margin-bottom: 0.1%;
-} 
+
 .pari-overview .left button {
     font-family: 'Rubik', sans-serif;
     text-transform: uppercase;
