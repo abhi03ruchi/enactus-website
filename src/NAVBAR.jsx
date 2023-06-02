@@ -24,7 +24,7 @@ export default function NAVBAR() {
                     <li><a href="#Mission">Mission</a></li>
                     <li><a href="#project">Projects</a></li>
                     <li><Link to ='/Gallery'>Gallery</Link></li>
-                    <li><Link to ='/Events'>Events</Link></li>
+                    <li><Link to ='/Event'>Events</Link></li>
                     <li><a href="#footer">Contact</a></li>
                 </ul>
             </nav>

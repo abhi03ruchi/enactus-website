@@ -5,9 +5,11 @@ import logo from './homeAssets/Enactus.png'
 import Vdo from "./Images/Enactus.mp4"
 import { Typography } from '@mui/material';
 import NAVBAR from './NAVBAR';
+import Event1 from "./Images/Event1.png"
+
 function srcset(image, size, rows = 1, cols = 1) {
   return {
-    src: `${image}?w=${size * cols}&h=${size * rows}&fit=crop&auto=format`,
+    src: `${image}`,
     srcSet: `${image}?w=${size * cols}&h=${size * rows
       }&fit=crop&auto=format&dpr=2 2x`,
   };
@@ -104,7 +106,7 @@ export default function QuiltedImageList() {
 
 const itemData = [
   {
-    img: 'https://images.unsplash.com/photo-1551963831-b3b1ca40c98e',
+    img: {Event1},
     title: 'Breakfast',
     rows: 2,
     cols: 2,

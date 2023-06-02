@@ -1,0 +1,263 @@
+*{
+    margin: 0;
+}
+.adva{
+    background-color: #C1E6E6;
+}
+.adva-main{
+    background-image: url("../Images/AdvaMain.png"); /* The image used */
+    height: 650px;
+    width: 100%;
+}
+
+
+
+.nav {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+  }
+  
+  .adva-sections {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+  }
+  
+  .adva-sections .left {
+	flex: 0.4;
+	/* background-color: green; */
+	margin-left: 100px;
+	margin-right: 5px;
+  }
+  
+  .adva-sections .left img {
+	max-width: 100%;
+	width: 300px;
+	height: 300px;
+	/* background-color: red; */
+  }
+  
+  .adva-sections .right {
+	flex: 0.6;
+	margin-left: -300px;
+	padding-left: 30px;
+	/* background-color: red; */
+  }
+  
+  .adva-sections .right button {
+	font-family: "Roboto", sans-serif;
+	text-transform: uppercase;
+	/* margin-left: 15%; */
+	outline: 0;
+	color: #222344;
+	/* width: 30%; */
+	border: 0;
+	padding: 20px;
+	background:#3F9DAA;
+	font-size: 20px;
+	font-weight: bolder;
+	-webkit-transition: all 0.3 ease;
+	transition: all 0.3 ease;
+	cursor: pointer;
+  }
+  .img1 {
+    /* max-width: 100%; */
+    height: 100px;
+    /* background-color: purple; */
+}
+
+.img2 {
+    width: 60px;
+    height: 30px;
+    padding: 20px;
+    max-width: 100%;
+    /* background-color: purple; */
+}
+
+.overview-adva {
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.overview-adva .left {
+    flex: 0.5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+.overview-adva .view-content {
+    /* background-color: violet; */
+    margin-bottom: 0.9%;
+}
+
+.overview-adva .left button {
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    margin-left: 17%;
+    outline: 0;
+    background:#3F9DAA;
+    width: 50%;
+    border: 0;
+    padding: 15px;
+    color: #222344;
+    font-size: 17px;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3 ease;
+    cursor: pointer;
+
+}
+
+.overview-adva .right {
+    flex: 0.5;
+    /* background-color: brown; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.overview-adva .right img {
+    width: 80%;
+    /* max-width: 100%; */
+}
+
+
+
+.clearfix:after {
+    clear: both;
+    content: "";
+    display: block;
+    height: 0;
+}
+
+.container {
+	font-family: 'Lato', sans-serif;
+	margin: 0 auto;
+}
+
+.wrapper {
+	display: table-cell;
+	height: 10px;
+	vertical-align: middle;
+}
+
+
+.arrow-steps .step {
+	font-size: 20px;
+	text-align: center;
+	color:white;
+	cursor: default;
+	margin: 0 1px;
+	padding: 10px 10px 10px 30px;
+	min-width: 310px;
+    height: 180px;
+	float: left;
+	position: relative;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none; 
+    transition:  0.2s ease;
+}
+
+.one-adva{
+    background-color: #9ED0D0;
+	clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+}
+.two{
+	background-color: #53A8B4;
+	clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 16% 51%, 0% 0%);
+}
+.three{
+	background-color: #318BA2;
+	clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 16% 51%, 0% 0%);
+}
+.four{
+    background-color: #184E5B;
+	clip-path: polygon(100% 0, 100% 50%, 100% 99%, 0% 100%, 25% 50%, 0% 0%);
+}
+
+/* .arrow-steps .step:after,
+.arrow-steps .step:before {
+	content: " ";
+	position: absolute;
+	top: 0;
+	right: -17px;
+	width: 0;
+	height: 0;
+	border-top: 19px solid transparent;
+	border-bottom: 17px solid transparent;
+	border-left: 17px solid ;	
+	z-index: 2;
+  transition: border-color 0.2s ease;
+} */
+
+/* .arrow-steps .step:before {
+	right: auto;
+	left: 0;
+	border-left: 17px solid #fff;	
+	z-index: 0;
+} */
+
+.arrow-steps .step:first-child:before {
+	border: none;
+}
+
+.arrow-steps .step:first-child {
+	border-top-left-radius: 4px;
+	border-bottom-left-radius: 4px;
+}
+
+.arrow-steps .step span {
+	position: relative;
+}
+.adva-line{
+	background-color: #3F9DAA;
+	height: 80px;
+	margin:20px 0 20px 0  ;
+	align-items: center;
+	align:center
+}
+.adva-line h1{
+	color:#032757;
+	font-size: 50px;
+	font-weight: 550;
+	margin-left:520px;
+	padding-top:10px ;
+}
+.adva-stories{
+	display:flex ;
+	flex-direction: row;
+	padding:15px;
+
+}
+.adva-stories .left{
+	width: 800px;
+	padding: 50px 30px 30px 100px;
+}
+.adva-stories .left h6{
+font-size: 35px;
+color: #236778;
+}
+.adva-stories .left h4{
+	font-size: 35px;
+	color: #236778;
+	}
+.adva-stories .right{
+	margin-left: 60px;
+}
+.adva-stories .left li{
+	font-size: 35px;
+color: #236778;
+}
+.adva-stories img {
+	height: 400px;
+}

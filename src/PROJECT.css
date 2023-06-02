@@ -146,6 +146,9 @@
             font-size: 30px;
             color: darkgoldenrod;
         }
+        .img-card.iCard-style1 .card-link h3 {
+            color: #FF9800;                
+        }
         
 
         .img-card.iCard-style1 .card-link a {
