@@ -48,18 +48,16 @@ export default function Aveksha() {
 
 
                 <div ref={AboutUs} className="content-overview">
-                    <div className="left">
                         <div className="overview-content">
-                            <Typography variant="h2" align="center" fontFamily={'Rubik'} fontSize={75} sx={{ color: "#222344", marginTop: 15, marginBottom: 8, fontWeight: 650 }}> Overview</Typography>
+                            <Typography variant="h2" align="center" fontFamily={'Rubik'} fontSize={75} sx={{ color: "#222344", marginTop: 5, marginBottom: 8, fontWeight: 650 }}> Overview</Typography>
 
                             <Typography variant="body1" align="center" sx={{ fontSize: 22, color: "#222344", marginRight: 35, marginLeft: 35, marginBottom: 12 }}> Aveksha is a pride initiative under the Enactus IGDTUW. We believe that it is our responsibility to look over all aspects of animal well-being, which includes feeding, sheltering, disease prevention and treatment, and overall care of the animals. Our process aims to provide sustainable, eco-friendly products for injured animals made by marginalized communities. This ensures threefold development:
                                 the well-being of animals, employment to the underprivileged, and promises innovation at a sustainable level. </Typography>
-                            <Button variant="contained" sx={{ backgroundColor: "#CDAD7D", color: "#222344" }}>Get In Touch</Button>
+                            <Button variant="contained" align="center">Get In Touch</Button>
                             <br />
                             <img src={AvekshaImg} />
 
                         </div>
-                    </div>
                 </div>
 
                 <div className="aveksha-goals">

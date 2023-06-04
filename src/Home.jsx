@@ -39,7 +39,7 @@ export default function Home() {
         <NAVBAR />
 
       <div className="front-main">
-        <Typography variant="h1" align="center" sx={{ color: "white", marginTop: 8, fontWeight: 750 }}><span className="change-content"></span></Typography>
+        <Typography variant="h1" align="center" sx={{ color: "white", marginTop:0, fontWeight: 750 }}><span className="change-content"></span></Typography>
       </div>
 
 

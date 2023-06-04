@@ -16,7 +16,7 @@ export default function Achievement(){
         slidesToShow: 3,
         slidesToScroll: 1,
         autoplay: true,
-        speed: 200,
+        speed: 500,
         autoplaySpeed: 2000,
         cssEase: "linear"
       };
