@@ -13,11 +13,12 @@ body {
 }
 .front-main{
   background-image: url("./Images/MainPage.jpg"); /* The image used */
-  height:650px;
+  height:680px;
   width:100%;
   background-repeat: no-repeat;
   background-size: 1550px;
 }
+
 
 .link {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;

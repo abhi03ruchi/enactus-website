@@ -8,6 +8,8 @@
     background-image: url("../Images/AdvaMain.png"); /* The image used */
     height: 650px;
     width: 100%;
+	background-size: 1550px;
+	background-repeat: no-repeat;
 }
 
 
