@@ -16,7 +16,7 @@ import ach1 from "./assets/ach1.png"
 import ach2 from "./assets/ach2.png"
 import ach3 from "./assets/ach3.png"
 
-import NAVBAR from "../NAVBAR";
+import NAVBAR from "../Project_NAVBAR/NAVBAR.jsx";
 import CircleImpact from "./CircularImpact";
 // import HamburgerDropdown from "./HamburgerDropdown"
 

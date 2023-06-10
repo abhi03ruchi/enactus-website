@@ -13,7 +13,7 @@ import imag8 from './assets/sustain.png';
 // import GulGallery from './GulGallery';
 import CircleImpact from './CircleImpact.jsx';
 import logo from './assets/Enactus.png'
-import NAVBAR from "../NAVBAR";
+import NAVBAR from "../Project_NAVBAR/NAVBAR.jsx";
 
 
 export default function GulKaari() {
