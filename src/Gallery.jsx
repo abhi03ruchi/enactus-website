@@ -6,6 +6,17 @@ import Vdo from "./Images/Enactus.mp4"
 import { Typography } from '@mui/material';
 import NAVBAR from './NAVBAR';
 import Event1 from "./Images/Event1.png"
+import Event2 from "./Images/Event2.png"
+import Event3 from "./Images/Event3.png"
+import Event4 from "./Images/Event4.png"
+import Event5 from "./Images/Event5.png"
+import Event6 from "./Images/Event6.png"
+import Event7 from "./Images/Event7.png"
+import Event8 from "./Images/Event8.png"
+import Event9 from "./Images/adva1.png"
+import Event10 from "./Images/main1.jpeg"
+import Event11 from "./Images/EveP7.jpg"
+import Event12 from "./Images/MainPage.jpg"
 
 function srcset(image, size, rows = 1, cols = 1) {
   return {
@@ -106,60 +117,60 @@ export default function QuiltedImageList() {
 
 const itemData = [
   {
-    img: {Event1},
+    img: Event1,
     title: 'Breakfast',
     rows: 2,
     cols: 2,
   },
   {
-    img: 'https://images.unsplash.com/photo-1551782450-a2132b4ba21d',
+    img: Event9,
     title: 'Burger',
   },
   {
-    img: 'https://images.unsplash.com/photo-1522770179533-24471fcdba45',
+    img: Event3,
     title: 'Camera',
   },
   {
-    img: 'https://images.unsplash.com/photo-1444418776041-9c7e33cc5a9c',
+    img: Event4,
     title: 'Coffee',
     cols: 2,
   },
   {
-    img: 'https://images.unsplash.com/photo-1533827432537-70133748f5c8',
+    img: Event2,
     title: 'Hats',
     cols: 2,
   },
   {
-    img: 'https://images.unsplash.com/photo-1558642452-9d2a7deb7f62',
+    img: Event6,
     title: 'Honey',
     author: '@arwinneil',
     rows: 2,
     cols: 2,
   },
   {
-    img: 'https://images.unsplash.com/photo-1516802273409-68526ee1bdd6',
+    img: Event7,
     title: 'Basketball',
   },
   {
-    img: 'https://images.unsplash.com/photo-1518756131217-31eb79b20e8f',
+    img: Event8,
     title: 'Fern',
   },
   {
-    img: 'https://images.unsplash.com/photo-1597645587822-e99fa5d45d25',
+    img: Event10,
     title: 'Mushrooms',
     rows: 2,
     cols: 2,
   },
   {
-    img: 'https://images.unsplash.com/photo-1567306301408-9b74779a11af',
+    img: Event11,
     title: 'Tomato basil',
   },
   {
-    img: 'https://images.unsplash.com/photo-1471357674240-e1a485acb3e1',
+    img: Event5,
     title: 'Sea star',
   },
   {
-    img: 'https://images.unsplash.com/photo-1589118949245-7d38baf380d6',
+    img: Event12,
     title: 'Bike',
     cols: 2,
   },
