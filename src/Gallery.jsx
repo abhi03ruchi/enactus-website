@@ -16,7 +16,7 @@ import Event8 from "./Images/Event8.png"
 import Event9 from "./Images/adva1.png"
 import Event10 from "./Images/main1.jpeg"
 import Event11 from "./Images/EveP7.jpg"
-import Event12 from "./Images/MainPage.jpg"
+import Event12 from "./Images/mainPage.png"
 
 function srcset(image, size, rows = 1, cols = 1) {
   return {

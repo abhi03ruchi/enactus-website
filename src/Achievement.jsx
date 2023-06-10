@@ -18,7 +18,15 @@ export default function Achievement() {
         autoplay: true,
         speed: 500,
         autoplaySpeed: 2000,
-        cssEase: "linear"
+        cssEase: "linear",
+        responsive:[
+            {
+                breakpoint:960,
+                settings:{
+                    slidesToShow:1
+                }
+            }
+        ]
     };
     return (
         <div>

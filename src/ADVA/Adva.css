@@ -138,11 +138,13 @@
     content: "";
     display: block;
     height: 0;
+	margin: 3 ;
+
 }
 
 .container {
 	font-family: 'Lato', sans-serif;
-	margin: 0 auto;
+	margin: 3 ;
 }
 
 .wrapper {
@@ -153,12 +155,13 @@
 
 
 .arrow-steps .step {
-	font-size: 20px;
+	font-size: 22px;
 	text-align: center;
+	font-family: "Roboto", sans-serif;
 	color:white;
 	cursor: default;
-	margin: 0 1px;
-	padding: 10px 10px 10px 30px;
+	margin: 100px 0px ;
+	padding: 40px 10px 10px 25px;
 	min-width: 310px;
     height: 180px;
 	float: left;

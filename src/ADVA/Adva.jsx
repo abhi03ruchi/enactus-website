@@ -64,37 +64,38 @@ export default function Adva() {
                     </div>
                 </div>
             <div className="goals">
-                <Typography variant="h2" fontSize={65} align="center" sx={{ color: "#222344", marginTop: 5, marginBottom: 10, fontWeight: 650 }}> What do we do ?</Typography>
+                <Typography variant="h2" fontSize={65} align="center" sx={{ color: "#222344", marginTop: 8, marginBottom: 15, fontWeight: 650 }}> What do we do ?</Typography>
                 <div class="container">
                     <div class="wrapper">
                         <div class="arrow-steps clearfix">
-                            <div class="step current one-adva"> <span> Community survey<br/>  
-                                                                        Product Development<br/>
-                                                                        Identifying suppliers<br/>
-                                                                </span> </div>
-                            <div class="step two"> <span>Step 2<br/>
-                            Initiate production <br/>
-                            Establish customer base<br/>
-                            Modification based<br/> on market response<br/>
+                                <div class="step current one-adva"> <span> Step 1<br/>
+                                    Community survey<br />
+                                    Product Development<br />
+                                    Identifying suppliers<br />
                                 </span> </div>
-                            <div class="step three"> <span> Step 3 <br/>
-                            Growing customer base <br/>
-     Establishing   market linkages</span> </div>
-                            <div class="step four"> <span>Step 4<br/>
-                            Ensuring production efficiency <br/>
-through <br/>
-supervision<br/>
-   Branching 
-out to <br/>
-new community
-</span> </div>
-                        </div>
+                                <div class="step two"> <span>Step 2<br />
+                                    Initiate production <br />
+                                    Establish customer base<br />
+                                    Modification based<br /> on market response<br />
+                                </span> </div>
+                                <div class="step three"> <span> Step 3 <br />
+                                    Growing customer base <br />
+                                    Establishing  <br/> market linkages</span> </div>
+                                <div class="step four"> <span>Step 4<br />
+                                    Ensuring production<br /> efficiency 
+                                    through <br />
+                                    supervision<br />
+                                    Branching
+                                    out to <br />
+                                    new community
+                                </span> </div>
+                            </div>
 
                     </div>
                 </div>
             </div>
 
-            <Typography variant="h2" fontSize={65} align="center" sx={{ color: "#222344", marginTop: 10, marginBottom: 10, fontWeight: 650 }}> Sustainable Development Goals</Typography>
+            <Typography variant="h2" fontSize={65} align="center" sx={{ color: "#222344", marginTop: 20, marginBottom: 10, fontWeight: 650 }}> Sustainable Development Goals</Typography>
 
             <ul id="categories" class="clr">
                 <li class="pusher"></li>
@@ -150,7 +151,7 @@ new community
 
             </ul>
 
-            <Typography variant="h2" fontSize={65} align="center" sx={{ color: "#222344", marginTop: 5, marginBottom: 8, fontWeight: 650 }}>
+            {/* <Typography variant="h2" fontSize={65} align="center" sx={{ color: "#222344", marginTop: 5, marginBottom: 8, fontWeight: 650 }}>
                 Our Filter Model</Typography>
             <div className="adva-stories">
                 <div className="right">
@@ -162,7 +163,7 @@ new community
                     <li>Filter bag is permeable to residues lower than 5 micron</li>
                     <li>can filter upto 8-10 litres of water</li>
                 </div>
-            </div>
+            </div> */}
             <div>
                 <div className="adva-line">
                     <h1>Stories that inspire</h1>
