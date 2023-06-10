@@ -8,7 +8,7 @@ import imag5 from './assets/sustain.png';
 import logo from './assets/Enactus copy.png'
 
 
-import NAVBAR from "../NAVBAR";
+import NAVBAR from "../Project_NAVBAR/NAVBAR.jsx";
 
 
 export default function PRAKRIKALA() {

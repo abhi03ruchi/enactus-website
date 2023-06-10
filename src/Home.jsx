@@ -149,7 +149,7 @@ export default function Home() {
       <div className="yellow-container"></div>
       
       
-      <div className="team">
+      <div className="team" id="achieve">
         <Typography align="center" variant="h2" sx={{ color: "white", margin: 8, fontWeight: 650, marginTop: 7, marginBottom: 10 }}> <span> GLANCE AT  </span> OUR ACHIEVEMENTS </Typography>
             <Achievements/>
       </div>

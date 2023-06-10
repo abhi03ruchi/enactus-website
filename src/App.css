@@ -725,24 +725,6 @@ section#counter-stats {
 }
 
 
-/* .content h2 {
-  position: relative;
-  font-size: 10px;
-  margin-bottom: 20px;
-  font-weight: 700;
-}
-
-
-.content h3 {
-  font-size: 1em;
-  text-transform: lowercase;
-  font-variant: small-caps;
-  font-weight: 700;
-  margin-bottom: 0.5em;
-  color: var(--accentcolor);
-  margin-bottom: 0.5em;
-  
-} */
 
 .content p {
   font-size: var(--content-fontsize);
@@ -1024,3 +1006,11 @@ button.ghost-btn:hover {
   }
 }
 
+.pink{
+  padding: 10px;
+  background-color: #FFC122;
+}
+
+.pink   .card-content{
+  color:#fff;
+}

@@ -8,7 +8,7 @@ import AdvaStory from "../Images/adva-story.png"
 import logo from '../GulKaari/assets/Enactus.png'
 
 import { Typography, Button } from "@mui/material";
-import NAVBAR from "../NAVBAR";
+import NAVBAR from "../Project_NAVBAR/NAVBAR.jsx";
 
 
 export default function Adva() {

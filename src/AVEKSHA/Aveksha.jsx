@@ -7,7 +7,7 @@ import AvekshaImg from "../Images/Aveksha website (2).png"
 import AvekshaGoal from "../Images/Aveksha-goals.png"
 import { Typography, Button } from "@mui/material";
 import logo from '../GulKaari/assets/Enactus.png'
-import NAVBAR from "../NAVBAR"
+import NAVBAR from "../Project_NAVBAR/NAVBAR.jsx";
 
 
 

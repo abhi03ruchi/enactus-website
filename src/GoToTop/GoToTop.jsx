@@ -1,6 +1,6 @@
 import React , {useEffect , useState} from 'react'
 import './GoToTop.css';
-import { FaArrowUp} from "react-icons/fa";
+
 
 
 const GoToTop = () => {
@@ -29,7 +29,8 @@ const GoToTop = () => {
         <div className='wrapper'>
             { isVisible && (
             <div className='top-btn' onClick={goTOBtn}>
-               <i class="fa-solid fa-arrow-up fa-bounce fa-sm"></i>
+               <i class="fa-solid fa-arrow-up fa-bounce fa-xs"></i>
+               {/* <i class="fa-regular fa-angle-up fa-bounce fa-xs"></i> */}
                
             </div>
             )}
