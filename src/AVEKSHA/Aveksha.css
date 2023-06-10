@@ -75,8 +75,22 @@
   width:70%;
   margin-left: 190px ;
 }
-.overview-content button{
+.content-overview .overview-content button{
   align-items: center;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  /* margin-left: 15%; */
+  outline: 0;
+  color: #222344;
+  /* width: 30%; */
+  border: 0;
+  padding: 20px;
+  background:#CDAD7D;
+  font-size: 20px;
+  font-weight: bolder;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
   
 }
 .aveksha-goals img{

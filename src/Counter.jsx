@@ -35,27 +35,27 @@ function MyComponent() {
 				<div class="containers">
 					<div class="row">
 						<div class="col-lg-3 stats">
-							<i class="fa fa-code" aria-hidden="true"></i>
-							<div class="counting" data-count="25">0</div>
-							<h5>PROJECT KHIDMAT</h5>
+							<i class="fa-solid fa-lightbulb" aria-hidden="true"></i>
+							<div class="counting" data-count="6">0</div>
+							<h5>PROJECTS</h5>
 						</div>
 
 						<div class="col-lg-3 stats">
-							<i class="fa fa-check" aria-hidden="true"></i>
-							<div class="counting" data-count="250">0</div>
-							<h5>PROJECT ADVA </h5>
+						<i class="fa-solid fa-award"></i>							
+						<div class="counting" data-count="55">0</div>
+							<h5>CAMPUS PROGRAMS </h5>
 						</div>
 
 						<div class="col-lg-3 stats">
-							<i class="fa fa-user" aria-hidden="true"></i>
-							<div class="counting" data-count="186">0</div>
-							<h5>PROJECT GULKAARI </h5>
+							<i class="fa-solid fa-users" aria-hidden="true"></i>
+							<div class="counting" data-count="60">0</div>
+							<h5>MEMBERS </h5>
 						</div>
 
 						<div class="col-lg-3 stats">
-							<i class="fa fa-coffee" aria-hidden="true"></i>
-							<div class="counting" data-count="6100">0</div>
-							<h5>PROJECT DHARINI</h5>
+							<i class="fa-solid fa-hands-holding-child" aria-hidden="true"></i>
+							<div class="counting" data-count="6900">0</div>
+							<h5>LIVES IMPACTED</h5>
 						</div>
 
 					</div>

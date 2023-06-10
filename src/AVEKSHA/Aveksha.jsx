@@ -13,6 +13,7 @@ import NAVBAR from "../Project_NAVBAR/NAVBAR.jsx";
 
 export default function Aveksha() {
     const AboutUs = useRef(null);
+    const contactUs = useRef(null);
 
 
     const scrollToSection = (elementRef) => {
@@ -48,18 +49,16 @@ export default function Aveksha() {
 
 
                 <div ref={AboutUs} className="content-overview">
-                    <div className="left">
                         <div className="overview-content">
-                            <Typography variant="h2" align="center" fontFamily={'Rubik'} fontSize={75} sx={{ color: "#222344", marginTop: 15, marginBottom: 8, fontWeight: 650 }}> Overview</Typography>
+                            <Typography variant="h2" align="center" fontFamily={'Rubik'} fontSize={75} sx={{ color: "#222344", marginTop: 5, marginBottom: 8, fontWeight: 650 }}> Overview</Typography>
 
                             <Typography variant="body1" align="center" sx={{ fontSize: 22, color: "#222344", marginRight: 35, marginLeft: 35, marginBottom: 12 }}> Aveksha is a pride initiative under the Enactus IGDTUW. We believe that it is our responsibility to look over all aspects of animal well-being, which includes feeding, sheltering, disease prevention and treatment, and overall care of the animals. Our process aims to provide sustainable, eco-friendly products for injured animals made by marginalized communities. This ensures threefold development:
                                 the well-being of animals, employment to the underprivileged, and promises innovation at a sustainable level. </Typography>
-                            <Button variant="contained" sx={{ backgroundColor: "#CDAD7D", color: "#222344" }}>Get In Touch</Button>
+                            <button onClick={() => scrollToSection(contactUs)}>Get In Touch</button>
                             <br />
                             <img src={AvekshaImg} />
 
                         </div>
-                    </div>
                 </div>
 
                 <div className="aveksha-goals">
@@ -114,7 +113,7 @@ export default function Aveksha() {
 
                 </ul>
             </div>
-            <div className="site-footer">
+            <div className="site-footer" ref={contactUs}>
                 <div className="north">
                     <Typography bgcolor={'black'} variant="h2" align="left" fontFamily={'Rubik'} fontSize={25} sx={{ paddingLeft: 0, paddingTop: 2, margin: 1.5, color: "whitesmoke", fontWeight: 650 }}> Contact Us </Typography>
                     <div className="one"> <ion-icon className="ions" name="location-sharp"></ion-icon>
@@ -122,13 +121,15 @@ export default function Aveksha() {
                             Opp to James church, delhi-110006</div>
                     </div>
                     <div className="one"><ion-icon name="call-sharp"></ion-icon>
-                        <div className="text">  Shubhangi: <br />
-                        Shanaya Aggarwal:
+                        <div className="text">  Shubhangi: 9319347394<br/>
+                                                Shanaya Aggarwal: 9999042985
                         </div>
                     </div>
                     <div className="one"> <ion-icon name="mail-sharp"></ion-icon>
                         <div className="text">
-                            enactus.igdtuw@gmail.com</div>
+                            enactus.igdtuw@gmail.com<br/>
+                            projectaveksha@gmail.com
+                        </div>
                     </div>
 
                 </div>

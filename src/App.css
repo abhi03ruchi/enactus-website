@@ -9,7 +9,14 @@ body {
   color: white;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  overflow-x: hidden;
+}
+.front-main{
+  background-image: url("./Images/MainPage.jpg"); /* The image used */
+  height:680px;
+  width:100%;
+  background-repeat: no-repeat;
+  background-size: 1550px;
 }
 
 
@@ -43,7 +50,6 @@ body {
 .services{
   margin-top: 10px;
   margin-bottom: 100px;
-  padding: 20px;
 }
 
 
@@ -179,6 +185,7 @@ section .left .btntwo {
 .yellow-container {
   background-color: #FFC122;
   height: 23px;
+  margin-top: 25px;
 }
 
 .white-container {
@@ -226,6 +233,7 @@ section .left .btntwo {
 .change-content::after {
   content: '';
   animation: changetext 20s infinite;
+  align-items: center;
 }
 
 @keyframes changetext {

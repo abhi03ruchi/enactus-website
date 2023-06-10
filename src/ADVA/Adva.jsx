@@ -13,7 +13,7 @@ import NAVBAR from "../Project_NAVBAR/NAVBAR.jsx";
 
 export default function Adva() {
     const AboutUs = useRef(null);
-
+    const contactUs = useRef(null);
 
     const scrollToSection = (elementRef) => {
         window.scrollTo({
@@ -54,7 +54,7 @@ export default function Adva() {
                                 and affordable drinking water. </Typography>
                             <Typography align="left" variant="body1" fontSize={22} sx={{ color: "#222344", margin: 9, marginBottom: 10 }}>We are modelling a cheap yet efficient biodegradable water filter which aims to provide clean and sanitized drinking water to economically weaker section of the society. We work with the motto of "Adding Value To People's Life"</Typography>
 
-                            <button>Get In Touch</button>
+                            <button onClick={() => scrollToSection(contactUs)}>Get In Touch</button>
                         </div>
                         {/* <button>Get In Touch</button> */}
 
@@ -182,7 +182,7 @@ new community
             </div>
             </div>
 
-            <div className="site-footer">
+            <div className="site-footer" ref={contactUs}>
                 <div className="north">
                     <Typography bgcolor={'black'} variant="h2" align="left" fontFamily={'Rubik'} fontSize={25} sx={{ paddingLeft: 0, paddingTop: 2, margin: 1.5, color: "whitesmoke", fontWeight: 650 }}> Contact Us </Typography>
                     <div className="one"> <ion-icon className="ions" name="location-sharp"></ion-icon>
@@ -190,13 +190,14 @@ new community
                             Opp to James church, delhi-110006</div>
                     </div>
                     <div className="one"><ion-icon name="call-sharp"></ion-icon>
-                        <div className="text">  Shreya Agarwal: <br />
-                            Adhya Mittal: +91 77039 20800
+                        <div className="text">  Shreya Agarwal: +91 7303042052 <br />
                         </div>
                     </div>
                     <div className="one"> <ion-icon name="mail-sharp"></ion-icon>
                         <div className="text">
-                            enactus.igdtuw@gmail.com</div>
+                            enactus.igdtuw@gmail.com<br/>
+                            projectadva2122@gmail.com
+                        </div>
                     </div>
 
                 </div>
